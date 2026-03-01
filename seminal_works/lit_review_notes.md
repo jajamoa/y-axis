@@ -521,6 +521,23 @@ Could add to §2 (use-case spectrum): "In therapeutic AI, the clinical evidence 
 
 ---
 
+## Batch 30: Collective Intelligence Requires Individual Diversity
+
+### The Diversity Prediction Theorem (Page 2008)
+- **Mathematical result:** Collective accuracy = average individual accuracy + diversity of predictions
+- A group of identical agents adds ZERO collective intelligence — you need diverse perspectives
+- **PNAS (2021):** "A robust CI factor characterizes a group's ability to work together across a diverse set of tasks" — collective intelligence is real and measurable
+
+### Implication for our paper:
+- **Multi-agent AI systems need individuated agents.** If all agents are clones of GPT-4o, multi-agent architectures gain nothing over a single agent.
+- Tuyls argues for a "social path" to human-like AI. Our paper adds: the social path requires *diverse individuals*, not interchangeable instances.
+- This connects to the Spontaneous Emergence paper (Entropy 2024): even starting from homogeneous agents, social interaction drives differentiation — because collective systems NEED individuality to function.
+- **Potential sentence for draft §2 or §5:** "Collective intelligence requires cognitive diversity among participants (Page 2008); a society of identical instances lacks the varied perspectives from which collective insight emerges."
+
+### This is a strong argument for why the Y-axis matters beyond companion AI: even tool-mode multi-agent systems benefit from individuated agents.
+
+---
+
 ## Batch 22: Strongest Counterarguments to Our Thesis
 
 ### Drexler's CAIS: "Comprehensive AI Services" (2019)
