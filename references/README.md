@@ -100,3 +100,19 @@
 ---
 
 *Frankfurt and Bratman are particularly important for §2.2 — they provide analytic philosophy's account of why genuine agency requires structural constraints (second-order volitions, settled intentions) that current LLMs lack. To be checked: find exact Frankfurt 1971 journal volume and page numbers.*
+
+---
+
+### 11. Sophia — A Persistent Agent Framework / System 3 (2024)
+**File:** `pdfs/sophia_persistent_agent_2024.pdf`  
+**Citation:** (Authors TBD). A Persistent Agent Framework of Artificial Life. arXiv:2512.18202 (2024)  
+**Summary:** Proposes "System 3" — a meta-layer above System 1 (perception) and System 2 (deliberation) dedicated to maintaining *narrative identity* and long-horizon adaptation in LLM agents. This is the most direct architectural recognition that current LLMs lack the Y-axis. The paper explicitly maps psychological constructs (identity, goal persistence, self-monitoring) to computational modules, framing narrative identity as an *absent stratum* that must be added. Best positive existence proof for §3.3 — shows individuality and generality are separable design targets requiring distinct architectural modules.
+
+---
+
+### 12. Lifelong Learning of LLM-based Agents: A Roadmap (2025)
+**File:** `pdfs/zheng2025_lifelong_llm_agents.pdf`  
+**Citation:** Zheng, J. et al. Lifelong Learning of Large Language Model based Agents: A Roadmap. arXiv:2501.07278 (2025)  
+**Summary:** First systematic survey of lifelong/continual learning for LLM agents. Explicitly identifies that existing LLM agents "lack the ability to adapt over time" and treats temporal continuity of self as the central unsolved problem. Confirms from within the ML community that the Y-axis is a recognized open problem, not a philosophical add-on.
+
+*Last updated: 2026-03-01 by Paul 🧠*

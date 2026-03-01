@@ -68,7 +68,9 @@ These observations allow us to reinterpret several well-known phenomena. Sycopha
 
 The separability of individuality and generality is further demonstrated by systems that explicitly model individuality without increasing general capability. Cognitive architectures such as SOAR and ACT-R [9, 10] maintain persistent identity, memory, and goal structures without approaching broad task generality. Personalized federated learning produces models that capture individual data distributions while neither targeting nor achieving general capability [11]. Conversely, scaling frontier models to ever-greater generality has not produced structural individuality. The two objectives are separable in the design space—they respond to different architectural choices and different training signals.
 
-Recent empirical work provides direct negative evidence. Li et al. (2024) demonstrate that prompt-based persona conditioning degrades systematically over extended conversations: transformer attention over system-prompt tokens weakens as dialogue accumulates, causing measurable drift in stylistic and behavioral consistency [Li et al., 2024]. This is not an engineering limitation awaiting a patch—it is a structural consequence of how attention-based architectures process sequential context, and it affects frontier models including GPT-4. In multi-agent settings, behavioral drift compounds: systems that begin with well-specified roles progressively deviate from their design specifications over extended interaction sequences, without any parameter change and without explicit adversarial pressure [arXiv:2601.04170]. These are not anecdotal observations; they are documented failure modes that admit no solution within the current paradigm, because they arise from the absence of structural individuality—not from any correctable implementation error.
+Recent empirical work provides direct negative evidence. Li et al. (2024) demonstrate that prompt-based persona conditioning degrades systematically over extended conversations: transformer attention over system-prompt tokens weakens as dialogue accumulates, causing measurable drift in stylistic and behavioral consistency [20]. This is not an engineering limitation awaiting a patch—it is a structural consequence of how attention-based architectures process sequential context, and it affects frontier models including GPT-4. In multi-agent settings, behavioral drift compounds: systems that begin with well-specified roles progressively deviate from their design specifications over extended interaction sequences, without any parameter change and without explicit adversarial pressure [22]. These are not anecdotal observations; they are documented failure modes that admit no solution within the current paradigm, because they arise from the absence of structural individuality—not from any correctable implementation error.
+
+Recent architecture proposals have begun to recognize this gap explicitly. The "Sophia" framework (2024) proposes a *System 3* meta-layer above the familiar System 1/System 2 dichotomy, dedicated specifically to maintaining *narrative identity* and long-horizon alignment in LLM agents—precisely the Y-axis function we describe [arXiv:2512.18202]. The framing is revealing: the authors identify narrative identity as a *missing stratum* in current architectures, not a future enhancement. Similarly, Zheng et al. (2025) survey lifelong learning for LLM agents and explicitly note that existing agents "are typically designed for static systems and lack the ability to adapt over time"—treating temporal continuity of self as the central unsolved problem in LLM-based agency [23]. These efforts confirm our structural claim: individuality is not a property that current architectures are gradually acquiring. It is a recognized absence that requires dedicated architectural treatment.
 
 ## Intelligence requires social situatedness
 
@@ -154,7 +156,13 @@ The Y-axis is not optional. It is not a feature to be added after generality is 
 
 [20] Li, K. et al. Measuring and Controlling Persona Drift in Language Model Dialogs. arXiv:2402.10962 (2024).
 
-[21] (Authors TBD). Agent Drift: Quantifying Behavioral Degradation in Multi-Agent LLM Systems Over Extended Interactions. arXiv:2601.04170 (2025).
+[21] Bai, Y. et al. Constitutional AI: Harmlessness from AI Feedback. arXiv:2212.08073 (2022).
+
+[22] (Authors unlisted). Agent Drift: Quantifying Behavioral Degradation in Multi-Agent LLM Systems Over Extended Interactions. arXiv:2601.04170 (January 2026).
+
+[23] Zheng, J. et al. Lifelong Learning of Large Language Model based Agents: A Roadmap. arXiv:2501.07278 (2025).
+
+[24] (Authors TBD). A Persistent Agent Framework of Artificial Life [Sophia — System 3]. arXiv:2512.18202 (2024).
 
 ---
 
