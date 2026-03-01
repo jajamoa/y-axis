@@ -597,6 +597,25 @@ Could add to §2 (use-case spectrum): "In therapeutic AI, the clinical evidence 
 
 ---
 
+## Batch 34: MIT Media Lab "Limits of Agency" (Chance's Lab!)
+
+### "On the limits of agency in agent-based models" — AAMAS 2025 Oral (MIT Media Lab, City Science)
+- **From Chance's own lab** (City Science / Kent Larson group)
+- Scales LLM-guided agents to millions via "LLM archetypes" — cluster agents into behavioral types for efficiency
+- Key quote: "simulation scale is often more important than individual agent sophistication"
+- Created digital twin of NYC with 8.4M agents; partnered with New Zealand for 5M citizen simulation
+
+### Relevance to our paper:
+1. **The archetype approach IS the X/Y tension in engineering practice.** To scale (X-axis goal), they had to reduce individuality to archetypes (Y-axis sacrifice). This is the tradeoff made visible.
+2. **Intellectual continuity:** Chance is from this lab. Our paper extends this work by asking: what are we losing when we reduce agents to archetypes? What applications need full individuality rather than archetype approximation?
+3. **Could cite to strengthen §3 (tension section):** "Even in simulation environments designed for behavioral realism, computational constraints force researchers to trade individuality for scale [ref]."
+4. **Self-citation note:** Since Kent Larson is a co-author on both papers, this is self-citation. NMI typically allows self-citations but they should be clearly relevant, not padding. This one is clearly relevant.
+
+### Potential new Tier 2 citation:
+- Chopra, A. et al. On the limits of agency in agent-based models. Proc. AAMAS (2025). [AgentTorch framework]
+
+---
+
 ## Batch 22: Strongest Counterarguments to Our Thesis
 
 ### Drexler's CAIS: "Comprehensive AI Services" (2019)
