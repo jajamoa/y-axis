@@ -418,6 +418,52 @@ Our current CAI counterargument says "a constitution authored by external design
 
 ---
 
+## Batch 26: Additional Noteworthy Papers
+
+### "Patterns, Not People" — Turing Institute/CETAS
+- LLM personality structures are statistical patterns, not individuated selfhood
+- Title perfectly captures our argument: what LLMs have is patterns (idem), not people (ipse)
+- Supports our claim that personality tests applied to LLMs measure statistical tendencies, not identity
+
+### Self-evolving agents (EvolveR, Self-Reflection, MAR)
+- Growing body of work on agents that improve through experience
+- ALL frame evolution as capability improvement (getting better at tasks), not identity formation (becoming someone)
+- Another example of X-axis work that implicitly touches Y-axis without recognizing it
+
+### "Right vs Right: Can LLMs Make Tough Choices?" (arXiv:2412.19926, Dec 2024)
+- Tests LLMs on moral dilemmas with conflicting values
+- Relevant to our CONSTRAINT property: can an agent make value-consistent choices under pressure?
+- Found that LLMs show inconsistent moral preferences across similar dilemmas
+
+---
+
+## Reading Plan (remaining hours)
+
+### Already covered:
+- [x] NMI Perspectives 2024-2025 (11 papers scanned)
+- [x] Replika/identity discontinuity literature
+- [x] Personality stability benchmarks (PERSIST, PTCBENCH)
+- [x] Generative Agents (Park 2023 + 2024)
+- [x] AI personhood (Leibo/DeepMind)
+- [x] Industry approaches (Anthropic Soul Doc, OpenAI Model Spec)
+- [x] Counterarguments (CAIS, corrigibility, consciousness objection)
+- [x] Role-play benchmarks
+- [x] Memory architectures
+- [x] Cognitive science foundations (Humphrey, Dunbar, 4E, Frankfurt, Bratman, Vygotsky)
+- [x] Safety/corrigibility literature
+- [x] Catastrophic forgetting/alignment tax evidence
+- [x] Ricoeur novelty check
+
+### Still to explore:
+- [ ] Anthropology of AI relationships (Turkle, "Alone Together")
+- [ ] Digital twins in healthcare/education
+- [ ] Computational creativity and identity
+- [ ] NMI submission process details (LaTeX template, cover letter format)
+- [ ] Previous NMI rejections/appeals (any public data?)
+- [ ] Comparison with other venues (Science, PNAS Perspectives)
+
+---
+
 ## Batch 22: Strongest Counterarguments to Our Thesis
 
 ### Drexler's CAIS: "Comprehensive AI Services" (2019)
