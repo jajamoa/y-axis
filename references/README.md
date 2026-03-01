@@ -58,7 +58,7 @@
 
 ### 8. Measuring and Controlling Persona Drift in Language Model Dialogs (2024)
 **File:** `pdfs/persona_drift_2024.pdf`  
-**Citation:** Li, K. et al. (2024). Measuring and Controlling Persona Drift in Language Model Dialogs. arXiv:2402.10962  
+**Citation:** Li, K., Liu, T., Bashkansky, N., Bau, D., Viégas, F., Pfister, H., & Wattenberg, M. (2024). Measuring and Controlling Instruction (In)Stability in Language Model Dialogs. arXiv:2402.10962. (Harvard VCG Group)  
 **Summary:** Empirical study demonstrating that prompt-based personas degrade systematically over extended conversations — the model's outputs drift away from the stipulated character as context length grows. The mechanism is identified as *attention decay*: transformer attention over the system prompt weakens as dialogue tokens accumulate, diluting the persona signal. Crucially, this is presented as a known limitation of current architectures, not a bug to be patched. For our argument: this paper shows that externally specified "identity" (system prompt personas) is architecturally fragile — it degrades with conversation length. This is precisely the distinction between shallow conditioning and structural individuality we argue in §2.2 and §5.3.
 
 ---
@@ -116,3 +116,10 @@
 **Summary:** First systematic survey of lifelong/continual learning for LLM agents. Explicitly identifies that existing LLM agents "lack the ability to adapt over time" and treats temporal continuity of self as the central unsolved problem. Confirms from within the ML community that the Y-axis is a recognized open problem, not a philosophical add-on.
 
 *Last updated: 2026-03-01 by Paul 🧠*
+
+---
+
+### 13. Mitigating the Alignment Tax of RLHF (2024)
+**File:** `pdfs/alignment_tax_rlhf_2024.pdf`  
+**Citation:** (Authors TBD). Mitigating the Alignment Tax of RLHF. arXiv:2309.06256. Published at EMNLP 2024.  
+**Summary:** Documents the empirical "alignment tax" — RLHF alignment to human preferences (helpfulness, harmlessness) causes measurable degradation of pretrained general capabilities. Improving alignment forgetting pretrained abilities. **For our paper:** This is the most direct empirical evidence for the X/Y tradeoff: optimizing for alignment/identity-consistency dimensions provably hurts generality. Use in §3 (tradeoff mechanism) to ground the claim that these are not just conceptually orthogonal but involve genuine engineering tension. Perfectly supports Chance's framing of Generalist Orientation vs. Identity Orientation as a real tradeoff, not just a definitional gap.
