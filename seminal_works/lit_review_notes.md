@@ -372,6 +372,52 @@ Our current CAI counterargument says "a constitution authored by external design
 
 ---
 
+## Batch 24: Role-Play Benchmarks = Proto-Y-Axis Measurement
+
+### Emerging role-play evaluation landscape (2024-2025):
+- **RVBench** (ScienceDirect, Jul 2025): Tests role-playing LLMs' value orientations using PVQ-RR + dilemmatic scenarios. Measures whether agents maintain value consistency under pressure.
+- **CharacterBox** (NAACL 2025): Evaluates "behavioral coherence" — logical consistency of character actions in virtual worlds.
+- **RPGBench** (Feb 2025): Tests LLMs as RPG engines; personality consistency metric compares NPC personality scores over time.
+- **Role-Playing Evaluation** (arXiv:2505.13157): 4 dimensions — emotional understanding, decision-making, moral alignment, in-character consistency.
+
+### Key insight for our paper:
+**These benchmarks are measuring the Y-axis without calling it that.** They frame character consistency as a "role-playing capability" (X-axis task), but what they're actually measuring is individuality (Y-axis):
+- Value consistency = our CONSTRAINT property
+- Behavioral coherence = our PERSISTENCE property
+- In-character consistency under pressure = our HISTORICITY property (does the agent's accumulated history constrain its responses?)
+
+**This is evidence that the field is groping toward Y-axis measurement but lacks a framework for what it's measuring.** Our paper provides that framework.
+
+**Potential addition to §5:** "A growing number of benchmarks—RVBench, CharacterBox, PERSIST—already measure aspects of individuality under the label of 'role-play capability.' Our framework reveals these as proto-Y-axis metrics and suggests they should be unified under a common measurement paradigm."
+
+---
+
+## Batch 25: Developmental Robotics (Context Only)
+
+### "Understanding the sense of self through robotics" (Science Robotics, 2024)
+- Robotics community has thought about selfhood for decades (body schema, minimal self)
+- BUT: this is embodied selfhood (proprioception, body ownership), not narrative/social selfhood
+- Different enough from our argument that it's not directly relevant to cite
+- Useful if a reviewer asks about the robotics perspective on AI identity
+
+---
+
+## Session Summary (batches 1-25)
+
+### Total papers reviewed: ~45
+### Must-add citations: 5 (De Freitas Replika, PERSIST, Park 2023, Park 2024, De Freitas/Cohen NMI)
+### Key conceptual insights discovered:
+1. **Corrigibility is the safety community's Y-axis problem** — they want value stability but frame it as a control issue
+2. **Role-play benchmarks are proto-Y-axis metrics** — the field measures individuality without a framework
+3. **Memory ≠ identity** — current memory research is all idem (what you remember), none is ipse (who you become)
+4. **Anthropic Soul Document and OpenAI Model Spec illustrate industry approaches** — both are externally authored (idem)
+5. **Replika case is the strongest empirical evidence** — users mourn when AI identity breaks
+6. **PERSIST (AAAI 2026) shows scaling doesn't help** — even 400B+ models show personality instability
+7. **Park et al. 2024 shows Y-axis is achievable** — 1,000-person simulation with 85% accuracy
+8. **Our Ricoeur idem/ipse distinction is novel for NMI** — no prior work applies this to AI agent design
+
+---
+
 ## Batch 22: Strongest Counterarguments to Our Thesis
 
 ### Drexler's CAIS: "Comprehensive AI Services" (2019)
