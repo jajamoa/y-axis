@@ -282,4 +282,40 @@
 - Our extension: individuality requires *committing* to one trajectory, which is architecturally opposed to the simulator's generality (the infinity of possible characters)
 - This is the deepest statement of X/Y tension: the very architecture that enables generality (stochastic simulation of many characters) is what prevents individuality (commitment to one)
 
+---
+
+## Batch 13: Catastrophic Forgetting as X/Y Evidence
+
+### "Scaling Laws for Forgetting When Fine-Tuning LLMs" (arXiv:2401.05605, Jan 2024)
+- Fine-tuning for specialization measurably degrades general capabilities
+- Forgetting follows power laws — more specialization = more forgetting
+- **Relevance:** Additional quantitative evidence of X/Y tension. Fine-tuning toward identity (specialization) causes catastrophic forgetting of generality. This is the *mechanism* behind the alignment tax.
+- Already covered by Lin et al. [23] in our draft. Not a must-cite but useful to know the evidence base is deep.
+
+### NeurIPS 2025: "Mitigating Forgetting in LLM Fine-Tuning via Low-Perplexity Token Learning"
+- Even with mitigation techniques, the tension exists
+- **Key implication:** The field recognizes the tradeoff but frames it as "specialization vs generality." We reframe it as "individuality vs generality" — a more precise and productive framing because identity is not just specialization (it includes commitment, historicity, social constitution).
+
+---
+
+## Batch 14: Agent Evaluation Ecosystem = X-Axis Only
+
+### Confirmed through survey of evaluation frameworks (2024-2025):
+- AgentBench, WebArena, SWE-bench, τ-bench, CLEAR, MMLU, ARC-AGI, BIG-bench, AGIEval — ALL measure task performance
+- CLEAR framework (Nov 2025): Cost, Latency, Efficacy, Assurance, Reliability — still all X-axis
+- Shukla (SSRN 2025): 5-axis framework including "human-centred interaction" — still not identity
+- **The only Y-axis-adjacent benchmarks found:** PERSIST (personality stability) and PTCBENCH (contextual personality consistency)
+- **This confirms our claim:** "The field has built elaborate measurement infrastructure for one axis and none for the other."
+
+---
+
+## Reading Plan (next 2 hours)
+
+### Priority searches remaining:
+1. **Continual learning + identity** — does the continual learning literature discuss agent identity? (Probably not, but should verify)
+2. **Digital twins / simulated humans** — another application domain where Y-axis matters
+3. **Philosophical critiques of AGI** — any recent philosophy of AI papers that notice the identity gap?
+4. **NMI formatting and style** — look at actual published Perspectives for structural patterns (section headers, figure placement, reference density)
+5. **Senior co-author candidates** — check recent publications by Shanahan, Bengio, Thompson on identity-adjacent topics
+
 *Last updated: 2026-03-01 03:25 EST*
