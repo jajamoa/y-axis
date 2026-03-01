@@ -3,18 +3,18 @@
 **Target:** Nature Machine Intelligence — Perspective  
 **Word limit:** 3,000–4,000 words  
 **Authors:** Chance Jiajie Li, Zhenze Mo, Luis Alonso, Kent Larson, Jinhua Zhao  
-**Status:** DRAFT v0.5 — Reviewer simulation addressed, Vygotsky added, alignment complementarity noted  
+**Status:** DRAFT v0.6 — Major revision: reframed as Generalist vs Identity Orientation, tradeoff mechanism, use-case spectrum  
 **Last updated:** 2026-03-01  
 
 ---
 
-**Abstract.** Current definitions of Artificial General Intelligence converge on a single axis of evaluation: task generality—the breadth and depth of capability across domains. We argue that this framing is fundamentally incomplete. Drawing on cognitive science, philosophy of mind, and empirical observations of large language model behavior, we identify a missing Y-axis: individuality, defined as the structural sedimentation of history into a persistent, constraining, and generative identity. We show that current training paradigms—pretraining on aggregate corpora and alignment via generic reward signals—are structurally oriented away from individuality, and that scaling does not resolve this. We propose a two-dimensional framework for evaluating progress toward AGI and outline concrete implications for benchmarks, architectures, and research priorities.
+**Abstract.** Current definitions of Artificial General Intelligence converge on a single axis of evaluation: task generality—the breadth and depth of capability across domains. We argue that this framing misses a second, orthogonal axis: individuality—the structural sedimentation of history into a persistent, constraining, and generative identity. These two design orientations—generalist capability and individuated identity—are not merely different objectives; they are in genuine tension, with architectural choices that optimize for one actively working against the other. We show that current training paradigms are structurally oriented away from individuality and that scaling does not resolve this. We propose a two-dimensional framework that maps applications from productivity assistants (capability-dominant) to social simulations (identity-dominant), and outline implications for benchmarks, architectures, and research priorities. The Y-axis is not merely unmeasured—it is not yet well-defined. Defining it is one contribution of this paper.
 
 ---
 
 The race to define Artificial General Intelligence has intensified. Google DeepMind has proposed "Levels of AGI" organized by depth of performance and breadth of generality [1]. OpenAI's charter defines AGI as "highly autonomous systems that outperform humans at most economically valuable work." Anthropic's Responsible Scaling Policy frames risk thresholds by capability level. Chollet's ARC benchmark operationalizes intelligence as skill-acquisition efficiency [2]. These frameworks differ in detail but converge on a shared, often implicit, assumption: that intelligence is a function of task generality and performance level, and that properties such as persistent identity, social situatedness, and historical trajectory are either irrelevant to the definition of AGI or will emerge as byproducts of sufficient capability.
 
-We argue this assumption is mistaken. Any scientifically adequate definition of AGI that excludes individuality and social intelligence is fundamentally incomplete—not as a matter of product design or user experience, but as a matter of what intelligence *is*. A system that can solve any task but cannot maintain a consistent identity, form durable commitments, or act from a historically constituted perspective is not generally intelligent. It is generally capable, which is a categorically different claim.
+We argue this assumption is mistaken. Building intelligent agents involves two fundamental design orientations—generalist capability and individuated identity—that are in genuine tension with each other. A system that can solve any task but cannot maintain a consistent identity, form durable commitments, or represent a specific perspective is not generally intelligent. It is generally capable, which is a categorically different claim. Moreover, the relationship between these two orientations is not one of inclusion (capability subsumes identity) but of trade-off: optimizing for one actively works against the other.
 
 This distinction matters now for three reasons. First, AGI definitions are calcifying into benchmarks and policy frameworks—the "Levels of AGI" taxonomy [1], ARC-AGI-2, and similar efforts—that will direct research priorities, funding, and regulatory attention for years. Definitional omissions today become structural blind spots tomorrow. Second, autonomous agents are being deployed in settings where identity consistency and social accountability are not optional: long-horizon coding assistants, research agents, and healthcare decision-support systems all require a persistent, accountable self that current architectures do not provide. Third, the AI safety discourse has focused extensively on value alignment [3] while largely ignoring identity consistency as a safety-relevant property—yet a system that abandons its stated values under conversational pressure [4] is arguably unsafe precisely because it lacks the structural individuality that would make its commitments meaningful.
 
@@ -43,22 +43,28 @@ This definition has four operational properties:
 
 ## A two-dimensional framework
 
-With individuality defined, we can state the structural claim. Current AGI definitions operate along a single axis: task generality, measured as the breadth and depth of capability across domains. We propose that a second axis—individuality, measured as the persistence, coherence, and social embeddedness of identity—is equally necessary for any adequate definition of general intelligence.
+With individuality defined, we can state the structural claim. Building intelligent agents involves two fundamental design orientations that are in genuine tension:
 
-Critically, these axes are substantially orthogonal. Consider the space they define:
+The **X-axis—generalist orientation**—optimizes for capability maximization: multi-task proficiency, tool use, long-term reasoning, autonomous decision-making, and environmental adaptability. The goal is an agent that functions as a universal expert. This is where virtually all current research investment is concentrated.
 
-- **High generality, low individuality:** GPT-4 and similar frontier models. Broad capability across tasks, no persistent identity, values that shift under conversational pressure [4], no commitments that survive a context window.
-- **Low generality, high individuality:** A domain-specific expert system with persistent user models, institutional memory, and social protocols—or, more prosaically, a human expert with narrow skills but a coherent identity and professional commitments.
-- **High generality, high individuality:** The implicit aspiration of AGI as commonly understood—a system that can do anything *and* that has a consistent self from which it acts. No current system occupies this quadrant.
-- **Low generality, low individuality:** A stateless, narrow tool. A calculator.
+The **Y-axis—identity orientation**—optimizes for representational fidelity: consistent personality, coherent biographical identity, distinctive voice and tone, long-term relational memory, growth trajectory, and the capacity to represent specific perspectives, communities, or social roles. The goal is an agent that functions as a social actor, not merely a tool.
 
-This framework (Figure 1) makes visible what current definitions obscure: the entire Y-axis is unmeasured. Every major AGI benchmark—ARC-AGI, MMLU, BIG-bench, AGIEval—evaluates movement along X while treating Y as irrelevant. The field has built an elaborate measurement infrastructure for one axis and none for the other.
+These orientations are substantially orthogonal, and—crucially—they are in *tension*. A perfectly capable agent should never produce inconsistent outputs due to emotional state, but a genuinely individuated agent might. A capable agent should maintain factual precision, but an agent representing a real person's perspective may have selective, biased, or incomplete memory—and this is a feature, not a bug. Optimizing for universal capability actively suppresses the idiosyncrasy that individuality requires; optimizing for identity fidelity introduces constraints that limit task-general performance.
 
-The orthogonality claim is not merely conceptual. It is supported by an architectural argument about current training methods.
+Different applications distribute across this tension as a spectrum (Figure 1):
 
-## Why generality does not entail individuality
+- **Productivity assistants** are X-dominant: capability drives value, identity is a surface-level interface choice.
+- **Companion systems** are Y-dominant: relational depth, empathy, and personality consistency drive value, while capability provides situational stability.
+- **Social simulation and urban planning** require high-Y agents that model heterogeneous populations—diverse personalities, conflicting perspectives, and irreducible pluralism rather than optimal-path uniformity.
+- **Education and counseling** systems occupy a balanced middle ground: personification drives engagement while capability ensures accurate information delivery.
 
-The dominant paradigm for building capable AI systems—large-scale pretraining on diverse corpora followed by reinforcement learning from human feedback (RLHF) or direct preference optimization (DPO)—is structurally oriented away from individuality.
+Every major AGI benchmark—ARC-AGI, MMLU, BIG-bench, AGIEval—evaluates movement along X while treating Y as irrelevant. The field has built elaborate measurement infrastructure for one axis and none for the other. The Y-axis is not merely unmeasured; it is not yet well-defined. Defining it is one contribution of this paper.
+
+The tension between these orientations is not merely conceptual. It is supported by an architectural argument about current training methods.
+
+## Why the axes are in tension
+
+The dominant paradigm for building capable AI systems—large-scale pretraining on diverse corpora followed by reinforcement learning from human feedback (RLHF) or direct preference optimization (DPO)—does not merely neglect individuality. It is structurally oriented *against* it.
 
 **The training objective averages out individual signal.** Pretraining minimizes cross-entropy loss over a corpus representing millions of authors. The objective function treats individual voice, perspective, and commitment as variance to be reduced. A model that perfectly minimizes this loss has learned the statistical mean of human expression—a remarkably useful achievement, but one that is definitionally anti-individual. Individuality is signal that this objective treats as noise.
 
@@ -156,7 +162,7 @@ The Y-axis is not optional. It is not a feature to be added after generality is 
 
 [19] Bai, Y. et al. Constitutional AI: Harmlessness from AI Feedback. arXiv:2212.08073 (2022).
 
-[20] Li, K. et al. Measuring and Controlling Persona Drift in Language Model Dialogs. arXiv:2402.10962 (2024).
+[20] Li, K. et al. Measuring and Controlling Instruction (In)Stability in Language Model Dialogs. arXiv:2402.10962 (2024).
 
 [21] Bai, Y. et al. Constitutional AI: Harmlessness from AI Feedback. arXiv:2212.08073 (2022).
 
