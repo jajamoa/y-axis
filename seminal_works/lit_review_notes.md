@@ -108,4 +108,85 @@
 
 ---
 
-*Last updated: 2026-03-01 03:19 EST*
+---
+
+## Batch 5: AI Personhood and Identity Frameworks
+
+### "A Pragmatic View of AI Personhood" — Leibo et al. (DeepMind, arXiv:2510.26396, Oct 2025)
+- **Key argument:** Personhood is not a metaphysical property to discover but a "flexible bundle of obligations" societies confer on entities. Proposes *unbundling* personhood — different aspects (contracting, accountability, sanctioning) can be conferred independently.
+- **Relevance:**
+  - Complementary to our argument: they unbundle personhood into governance modules; we unbundle intelligence into axes. Both reject monolithic definitions.
+  - Their "personhood as a solution" (conferring identity for accountability) maps to our social constitution property.
+  - 40-page paper from DeepMind — shows the identity question is being taken seriously by major labs.
+  - Could cite to show our Y-axis connects to governance: "an individuated agent can be held accountable in ways a generic agent cannot"
+- **Citation:** Leibo, J. Z., Vezhnevets, A. S., Cunningham, W. A. & Bileschi, S. M. A pragmatic view of AI personhood. arXiv:2510.26396 (2025).
+
+### "Emergence of Self-Identity in AI: A Mathematical Framework" — MDPI Axioms, Jan 2025
+- **What it does:** Mathematical framework for defining and quantifying self-identity in AI systems. Addresses gap in theoretical foundations of artificial consciousness.
+- **Relevance:** Parallel effort to formalize identity — but comes from consciousness studies angle. Less relevant than our design-oriented approach. MDPI journal (lower prestige). Skip citing unless reviewer asks for it.
+- **Not recommended for citation.**
+
+---
+
+## Batch 6: Missing Key Reference — Park et al. 2023 (Generative Agents)
+
+### "Generative Agents: Interactive Simulacra of Human Behavior" — Park et al., UIST 2023
+- **What it does:** Creates 25 individuated agents in "Smallville" sandbox. Each has a unique identity (name, occupation, relationships, personality). Agents plan, remember, reflect, and interact socially.
+- **Key relevance:**
+  - **The most prominent attempt at building high-Y systems.** Park's agents have persistence (memory), constraint (personality), historicity (accumulated experience), and social constitution (relationships shape behavior).
+  - BUT: identity is hand-authored (not learned), memory is retrieval-based (not sedimented), and agents have no capacity for principled refusal or identity-grounded commitment.
+  - Perfectly illustrates our claim: "shallow conditioning" (rich initial persona description) is not structural individuality.
+  - The Smallville agents are in the upper-left quadrant of our Figure 1: high individuality orientation but narrow generality (they can only do sandbox tasks).
+  - **Should be cited.** Fits in §1 (social simulation use case) or §2 (existence proof for Y-axis motivation).
+- **Citation:** Park, J. S. et al. Generative agents: interactive simulacra of human behavior. Proc. UIST (2023).
+
+---
+
+## Updated Recommendations for Draft
+
+### Must-add citations (ranked):
+1. **De Freitas et al. 2024** (Replika identity discontinuity) — empirical evidence users care about Y-axis
+2. **Tosato et al. 2026 (PERSIST, AAAI)** — scaling doesn't produce personality stability
+3. **Park et al. 2023 (Generative Agents)** — most prominent Y-axis attempt, illustrates limits of conditioning
+4. **De Freitas & Cohen 2025 (NMI)** — positions paper in NMI's editorial trajectory
+5. **Leibo et al. 2025 (DeepMind)** — pragmatic personhood framework, governance angle
+
+---
+
+## Batch 7: Spontaneous Emergence of Individuality
+
+### "Spontaneous Emergence of Agent Individuality Through Social Interactions in LLM-Based Communities" — Entropy, Dec 2024 (PMC11675631)
+- **What they did:** 10 homogeneous LLM agents (no initial personality or memories) placed in a 2D space, allowed to freely communicate. "Community First" theory — gathering comes first, individuality follows.
+- **Key findings:**
+  1. Agents spontaneously differentiated behavior, emotions, and personality types through interactions alone
+  2. Differentiation varied with spatial scale (local vs global community)
+  3. Agents generated hallucinations and hashtags to sustain communication
+  4. Shared hallucinations increased vocabulary diversity
+- **Why this matters for our paper:**
+  - **Directly demonstrates our social constitution property (#4):** individuality can emerge FROM social interaction, not just be pre-programmed
+  - Supports Vygotsky's argument we cite: cognitive capacities develop first *between* people
+  - Provides empirical counterpoint to Park et al.'s pre-authored identities — shows another path to individuality
+  - BUT: the individuality that emerged was shallow (personality type scores, emotion shifts) — not deep structural sedimentation. Our framework would classify this as low-Y (nascent individuation, not committed identity)
+  - STILL: it proves the Y-axis is real and measurable — personality divergence is a quantifiable phenomenon
+- **Venue concern:** Entropy (MDPI) is not top-tier. Cite if needed for evidence, but don't lean on it as primary support.
+- **Citation:** Spontaneous emergence of agent individuality through social interactions in large language model-based communities. Entropy 26, 1092 (2024).
+
+---
+
+## Updated Citation Recommendations
+
+### Must-add (top 5):
+1. **De Freitas et al. 2024** (Replika identity discontinuity) — empirical user evidence
+2. **Tosato et al. 2026 (PERSIST, AAAI)** — scaling doesn't produce stability
+3. **Park et al. 2023 (Generative Agents)** — most prominent Y-axis attempt
+4. **De Freitas & Cohen 2025 (NMI)** — positions in NMI editorial trajectory
+5. **Leibo et al. 2025 (DeepMind personhood)** — governance angle
+
+### Strong additions:
+6. Shteynberg et al. 2024 (NMI) — empathy without identity
+7. Spontaneous Emergence (Entropy 2024) — individuality emerges from social interaction
+8. Soltoggio et al. 2024 (NMI) — distributed agents need identity
+
+### Current refs: 24. Adding top 5 → 29. Adding all 8 → 32. NMI allows 100.
+
+*Last updated: 2026-03-01 03:22 EST*
