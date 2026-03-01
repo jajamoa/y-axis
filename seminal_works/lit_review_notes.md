@@ -249,4 +249,37 @@
 
 ### Ref count: Current 24 + Tier 1 (3) = 27. + Tier 2 (3) = 30. + Tier 3 (4) = 34. All within NMI's 100 limit.
 
+---
+
+## Batch 11: Memory ≠ Identity (architectural insight)
+
+### Key insight from memory architecture survey landscape:
+- Zhang et al. (already cited as [6]) surveys memory for LLM agents
+- Active field: MIRIX framework has Core/Episodic/Semantic/Procedural/Resource/Knowledge Vault components
+- **Critical observation for our paper:** ALL current memory architectures are *idem* (Ricoeur's sameness) — they enable recall and continuity. NONE address *ipse* (selfhood) — the capacity for committed identity that constrains future action based on who the agent has become, not just what it remembers.
+- This maps precisely to our four properties: current memory covers **persistence** and partial **historicity**, but misses **constraint** (value-driven refusal) and **social constitution** (identity shaped by relationships).
+- **Draft implication:** In §3 or §5, we could add: "Current agent memory research focuses on what systems remember (idem), not who they become through remembering (ipse). A complete Y-axis architecture requires both."
+
+### Chen et al. 2024 "From Persona to Personalization" (arXiv:2404.18231)
+- Survey of Role-Playing Language Agents (RPLAs)
+- Taxonomy: Demographic Persona → Character Persona → Individualized Persona
+- Maps to our Y-axis gradient: demographic = low Y (statistical stereotype), character = medium Y (fixed role), individualized = approaching high Y (emergent through interaction)
+- But survey treats these as engineering techniques, not as a design axis in tension with generality. Our paper adds the tension.
+- **Not a must-cite** but useful if reviewer asks about the role-playing literature.
+
+---
+
+## Batch 12: Sycophancy as Y-axis Failure
+
+### Sycophancy = failure of identity constraint
+- Wei et al. 2024 "Towards Understanding Sycophancy" (ICLR 2024) — already in our draft's argument territory
+- Nature feature (Oct 2025): "AI chatbots are sycophants — researchers say it's harming science"
+- **Key frame for our paper:** Sycophancy is what happens when a system lacks the *constraint* property of individuality. It changes its stated position based on social pressure because it has no committed identity to maintain. This is not just an alignment problem — it's a Y-axis=0 problem.
+- We already use this argument in the draft. Good — confirmed that this framing is supported by recent literature.
+
+### Shanahan et al. 2023 "Role-Play with Large Language Models" — already cited
+- Key idea: LLMs are "non-deterministic simulators" of character
+- Our extension: individuality requires *committing* to one trajectory, which is architecturally opposed to the simulator's generality (the infinity of possible characters)
+- This is the deepest statement of X/Y tension: the very architecture that enables generality (stochastic simulation of many characters) is what prevents individuality (commitment to one)
+
 *Last updated: 2026-03-01 03:25 EST*
