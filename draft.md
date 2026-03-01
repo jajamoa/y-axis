@@ -172,7 +172,7 @@ The Y-axis is not optional. It is not a feature to be added after generality is 
 
 [23] Zheng, J. et al. Lifelong learning of large language model based agents: a roadmap. arXiv:2501.07278 (2025).
 
-[24] (Authors TBD). A persistent agent framework of artificial life [Sophia]. arXiv:2512.18202 (2024).
+[24] Sun, M., Hong, F. & Zhang, W. Sophia: a persistent agent framework of artificial life. arXiv:2512.18202 (2024).
 
 [25] Mitigating the alignment tax of RLHF. arXiv:2309.06256 (EMNLP 2024).
 
