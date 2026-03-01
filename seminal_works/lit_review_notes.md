@@ -570,6 +570,33 @@ Could add to §2 (use-case spectrum): "In therapeutic AI, the clinical evidence 
 
 ---
 
+## Batch 33: Relational AI and Human-AI Relationships
+
+### "The Relational Tradeoff Model" (SAGE, 2025)
+- Explicitly models how social interaction affects users over time
+- Uses theories from relationship science, not just HCI
+- Relevant: shows that AI relationships have DYNAMICS — they develop, deepen, and can break
+
+### "Illusions of Intimacy" (arXiv:2505.11649, Dec 2025)
+- Examines gap between perceived empathy and genuine understanding in AI companions
+- Cites Replika and Character.AI as case studies
+- Key finding: "awareness of artificiality can reduce perceived sincerity"
+- Supports our argument: sustained human-AI relationships require genuine identity (Y), not just simulated empathy (X-axis capability)
+
+### "Why human-AI relationships need socioaffective alignment" (Nature HSS Comms, May 2025)
+- Argues that as AI capabilities advance, "deeper, more persistent relationships between humans and AI systems" emerge
+- These relationships require a new kind of alignment beyond task alignment
+- **Directly supports our Y-axis:** socioaffective alignment requires knowing WHO you're in a relationship with — an individuated agent, not a generic service
+
+### "Relational Norms for Human-AI Cooperation" (arXiv:2502.12102, Feb 2025)
+- Applies human relational norms theory to AI cooperation
+- Key insight: different types of relationships have different normative expectations
+- Maps to our application spectrum: productivity relationships have different Y-axis requirements than companion relationships
+
+### Not must-cites (our paper is NMI, not HCI journal) but useful supporting evidence if reviewer asks for empirical backing on the companion/relationship use case.
+
+---
+
 ## Batch 22: Strongest Counterarguments to Our Thesis
 
 ### Drexler's CAIS: "Comprehensive AI Services" (2019)
