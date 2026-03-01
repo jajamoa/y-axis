@@ -189,4 +189,64 @@
 
 ### Current refs: 24. Adding top 5 → 29. Adding all 8 → 32. NMI allows 100.
 
-*Last updated: 2026-03-01 03:22 EST*
+---
+
+## Batch 8: AGI Definitions and What They Miss
+
+### Morris et al. 2024 (DeepMind "Levels of AGI") — already cited
+- Key observation for our paper: They explicitly EXCLUDE consciousness and sentience because they're "not currently measurable by agreed-upon scientific methods."
+- **Our response should be sharpened:** Identity/individuality ≠ consciousness. Individuality IS measurable (PERSIST shows how). Our four operational properties are testable. This is what distinguishes our Y-axis from philosophical hand-waving about machine consciousness.
+- Draft should include a sentence like: "Unlike consciousness, individuality is operationally measurable—persistence can be tested across sessions, constraint through adversarial prompting, historicity through longitudinal tracking."
+
+### Leibo et al. 2025 (DeepMind "Pragmatic View of AI Personhood")
+- Complements Morris: where Morris defines AGI levels by performance, Leibo defines personhood by governance needs. Neither addresses individuality as a *design axis*.
+- Our paper fills the gap between "what can it do" (Morris) and "what obligations should it have" (Leibo) by asking "what kind of agent IS it."
+
+---
+
+## Batch 9: Ricoeur Novelty Check
+
+### Ricoeur idem/ipse in AI literature: appears to be novel for ML/NMI audience
+- "The algorithmic self" (PMC, 2025) — about how AI reshapes human identity, not AI's own identity
+- "Encountering Generative AI: Narrative Self-Formation" (MDPI Societies, Jan 2026) — uses Ricoeur for human self-formation, not AI agent design
+- No papers found applying Ricoeur's idem/ipse distinction to AI agent architecture or AGI definitions
+- **This confirms our paper has genuine philosophical novelty for the NMI readership.**
+
+---
+
+## Batch 10: Companion AI / Education (supporting context)
+
+### "How AI Companionship Develops" (arXiv:2510.10079, Oct 2025)
+- Longitudinal study: users' perceptions of generic chatbot converged to perceptions of their personal companion by Week 3
+- Supports our claim that users naturally individuate their AI interactions over time — the Y-axis demand exists even when the architecture doesn't support it
+- Not a must-cite but useful if reviewer asks for empirical support on companion use cases
+
+---
+
+## Master Citation Recommendation List
+
+### Tier 1 — Must add to draft:
+| # | Paper | Why | Where in draft |
+|---|-------|-----|----------------|
+| 1 | De Freitas et al. 2024 (Replika identity discontinuity) | Strongest empirical evidence for Y-axis | §1 opening or §2 companion use case |
+| 2 | Tosato et al. 2026 (PERSIST, AAAI) | Scaling doesn't produce stability | §3 "Scaling does not resolve this" |
+| 3 | Park et al. 2023 (Generative Agents, UIST) | Most prominent high-Y attempt | §2 social simulation use case |
+
+### Tier 2 — Strong additions:
+| # | Paper | Why | Where in draft |
+|---|-------|-----|----------------|
+| 4 | De Freitas & Cohen 2025 (NMI) | Positions in NMI editorial trajectory | §5 implications |
+| 5 | Leibo et al. 2025 (DeepMind personhood) | Governance angle | §5 implications |
+| 6 | Shteynberg et al. 2024 (NMI empathy) | Empathy requires identity | §4 cognitive science |
+
+### Tier 3 — Optional:
+| # | Paper | Why | Where in draft |
+|---|-------|-----|----------------|
+| 7 | Spontaneous Emergence (Entropy 2024) | Individuality emerges from social interaction | §4 Vygotsky support |
+| 8 | Soltoggio et al. 2024 (NMI) | Distributed agents need identity | §3 or §5 |
+| 9 | PTCBENCH (Yu et al. 2026) | Emerging Y-axis benchmarks | §5 evaluation protocols |
+| 10 | Ilievski et al. 2025 (NMI) | Even X-axis definition is contested | §3 framework |
+
+### Ref count: Current 24 + Tier 1 (3) = 27. + Tier 2 (3) = 30. + Tier 3 (4) = 34. All within NMI's 100 limit.
+
+*Last updated: 2026-03-01 03:25 EST*
