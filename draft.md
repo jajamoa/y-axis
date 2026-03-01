@@ -80,7 +80,7 @@ The separability of individuality and generality is further demonstrated by syst
 
 Recent empirical work provides direct negative evidence. Li et al. (2024) demonstrate that prompt-based persona conditioning degrades systematically over extended conversations: transformer attention over system-prompt tokens weakens as dialogue accumulates, causing measurable drift in stylistic and behavioral consistency [20]. This is not an engineering limitation awaiting a patch—it is a structural consequence of how attention-based architectures process sequential context, and it affects frontier models including GPT-4. In multi-agent settings, behavioral drift compounds: systems that begin with well-specified roles progressively deviate from their design specifications over extended interaction sequences, without any parameter change and without explicit adversarial pressure [22]. These are not anecdotal observations; they are documented failure modes that admit no solution within the current paradigm, because they arise from the absence of structural individuality—not from any correctable implementation error.
 
-Notably, recent architecture proposals have begun to recognize this gap independently—confirming that the absence of individuality is becoming visible to the field even without a unified framework to name it. Proposals for "System 3" meta-layers dedicated to narrative identity [arXiv:2512.18202] and surveys of lifelong learning that identify temporal self-continuity as the central unsolved problem in LLM-based agency [24] converge on the same conclusion: individuality is not a property that current architectures are gradually acquiring. It is a recognized absence that requires dedicated architectural treatment.
+Notably, recent architecture proposals have begun to recognize this gap independently—confirming that the absence of individuality is becoming visible to the field even without a unified framework to name it. Proposals for "System 3" meta-layers dedicated to narrative identity [24] and surveys of lifelong learning that identify temporal self-continuity as the central unsolved problem in LLM-based agency [23] converge on the same conclusion: individuality is not a property that current architectures are gradually acquiring. It is a recognized absence that requires dedicated architectural treatment.
 
 ## Intelligence requires social situatedness
 
@@ -174,7 +174,7 @@ The Y-axis is not optional. It is not a feature to be added after generality is 
 
 [24] Sun, M., Hong, F. & Zhang, W. Sophia: a persistent agent framework of artificial life. arXiv:2512.18202 (2024).
 
-[25] Mitigating the alignment tax of RLHF. arXiv:2309.06256 (EMNLP 2024).
+[25] Lin, Y., Lin, H., Xiong, W., Diao, S., Liu, J., Zhang, J., Pan, R., Wang, H., Hu, W. & Zhang, H. Mitigating the alignment tax of RLHF. *Proc. EMNLP* 580–606 (2024). arXiv:2309.06256.
 
 [26] Kirk, H. R., Vidgen, B., Röttger, P. & Hale, S. A. The benefits, risks and bounds of personalizing the alignment of large language models to individuals. *Nat. Mach. Intell.* (2024).
 
