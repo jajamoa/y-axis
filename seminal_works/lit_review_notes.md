@@ -191,6 +191,29 @@
 
 ---
 
+## Batch 17: Anthropic's "Soul Document" — The Industry Case Study
+
+### Anthropic's Claude "Soul Document" (leaked/confirmed Dec 2025)
+- **What it is:** 14,000-token training document defining Claude's character, emotions, ethical hierarchy, identity, and self-perception. Confirmed authentic by Amanda Askell (Anthropic ethicist).
+- **How it works:** Not a runtime system prompt — "compressed into the model's weights" through supervised learning. Anthropic's goal: Claude should internalize safety "so thoroughly that it essentially wants to behave safely, not because it was instructed to follow constraints, but because it understands why the outcome matters."
+- **Key structure:** Hierarchy of values (safety > ethics > Anthropic guidelines > helpfulness). "Bright lines" that cannot be crossed. Operator vs user authority levels. "Functional emotions and identity" section.
+- **Relevance to our paper:**
+  - **This IS the state-of-the-art in Y-axis engineering** — and it perfectly illustrates our argument about its limitations
+  - The Soul Document is authored externally by Anthropic → Ricoeur's idem (sameness imposed from outside), not ipse (selfhood generated from within)
+  - Claude's "identity" is a set of rules to follow, not a history of commitments made. It has no capacity to revise its own values based on experience.
+  - The hierarchy (safety > ethics > guidelines > helpfulness) is fixed — Claude cannot develop a different priority ordering through lived experience. This is exactly what we mean by "a constitution is not a character."
+  - **BUT we should be careful:** Anthropic might argue this is BETTER than self-generated identity (more controllable, safer). Our paper should acknowledge this as a legitimate tradeoff, not dismiss it.
+  - Could add a footnote or sentence: "Anthropic's character-training approach represents the most sophisticated current attempt at Y-axis engineering, yet by design it produces rule-following rather than self-constancy."
+- **Citation issue:** The Soul Document is not a formal publication. We could reference it as: Askell, A. Anthropic character guidelines for Claude. Confirmed via social media, Dec 2025. But NMI reviewers might object. Better to cite Bai et al. 2022 (Constitutional AI) which is the published version of the underlying approach, and mention the Soul Document only if needed.
+- **Not recommended as formal citation; use as discussion point.**
+
+### Implication for CAI section of our draft:
+Our current CAI counterargument says "a constitution authored by external designers is not a character." The Soul Document is the most explicit example of this — and also the most sympathetic version. We should:
+1. Keep our argument but acknowledge the Soul Document approach is the closest the industry has come to Y-axis engineering
+2. Note that even Anthropic frames this as character TRAINING, not character DEVELOPMENT — the distinction is exactly our idem/ipse point
+
+---
+
 ## Batch 8: AGI Definitions and What They Miss
 
 ### Morris et al. 2024 (DeepMind "Levels of AGI") — already cited
