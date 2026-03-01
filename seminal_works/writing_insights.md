@@ -81,6 +81,19 @@ Scanned all 11 NMI Perspectives published in 2025. Relevant observations:
 ### Potential new reference: Ilievski et al. 2025 (NMI)
 "Aligning generalization between humans and machines" — directly about what generalization means. We could cite this as evidence that even X-axis measurement is contested, strengthening our point that the field needs to be more careful about defining axes.
 
+## Official NMI Perspective Format (verified from nature.com/natmachintell/content)
+
+- **Main text:** 3,000–4,000 words ← our draft: 3,485 ✅
+- **References:** up to 100 ← our draft: 24 (plenty of room to add Tier 1-3 citations) ✅
+- **Peer reviewed:** yes
+- **Tone:** "more thought-provoking or speculative than Reviews... may take a narrower field of view... while opinionated, should remain balanced"
+- **Abstract:** required (published Perspectives like Tuyls et al. have them); should be ~100-150 words unreferenced
+- **Display items:** not specified for Perspectives, but published ones typically have 1-2 figures
+- **No supplementary information mentioned** for Perspectives (only Articles/Analyses)
+- **Non-primary article:** cannot contain original (previously unpublished) research findings ← important: our paper is argument-driven, not data-driven ✅
+- **Not eligible for Open Access** (subscription only)
+- **Submission format:** Word or TeX/LaTeX
+
 ## Specific Language Fixes for Our Draft
 
 ### Em dash overuse
