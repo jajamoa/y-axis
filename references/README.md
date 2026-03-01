@@ -121,5 +121,7 @@
 
 ### 13. Mitigating the Alignment Tax of RLHF (2024)
 **File:** `pdfs/alignment_tax_rlhf_2024.pdf`  
-**Citation:** (Authors TBD). Mitigating the Alignment Tax of RLHF. arXiv:2309.06256. Published at EMNLP 2024.  
+**Citation:** Lin, Y., Lin, H., Xiong, W., Diao, S. et al. (2024). Mitigating the Alignment Tax of RLHF. arXiv:2309.06256. Published at EMNLP 2024.  
 **Summary:** Documents the empirical "alignment tax" — RLHF alignment to human preferences (helpfulness, harmlessness) causes measurable degradation of pretrained general capabilities. Improving alignment forgetting pretrained abilities. **For our paper:** This is the most direct empirical evidence for the X/Y tradeoff: optimizing for alignment/identity-consistency dimensions provably hurts generality. Use in §3 (tradeoff mechanism) to ground the claim that these are not just conceptually orthogonal but involve genuine engineering tension. Perfectly supports Chance's framing of Generalist Orientation vs. Identity Orientation as a real tradeoff, not just a definitional gap.
+
+*(Authors updated: Lin, Y., Lin, H., Xiong, W., Diao, S., Liu, J., Zhang, J., Pan, R., Wang, H., Hu, W., Zhang, H. et al. — EMNLP 2024)*
