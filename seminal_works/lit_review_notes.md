@@ -538,6 +538,38 @@ Could add to §2 (use-case spectrum): "In therapeutic AI, the clinical evidence 
 
 ---
 
+## Batch 31: Morris et al. Smoking Gun Quote
+
+### Morris et al. 2024 (our ref [1]) explicitly acknowledges orthogonal axes
+- Direct quote from the paper: consciousness/sentience "seems orthogonal to the question of what the machine can do" — so they focus only on capabilities
+- They CHOSE to ignore the Y-axis and said so explicitly
+- **This is the strongest possible setup for our paper:** we're not arguing against Morris et al.; we're formalizing the dimension they deliberately set aside
+- **Draft revision idea:** Add a sentence like "Morris et al. themselves acknowledge that dimensions beyond task capability exist and are 'orthogonal' to their framework; our paper develops one such dimension."
+- This positions us as *extending* their work, not *critiquing* it — more diplomatic and more likely to pass review
+
+---
+
+## Batch 32: Floridi's "Agency without Intelligence"
+- Floridi (Philosophy & Technology, 2025): AI has agency but not intelligence — "artificial agency" not "artificial intelligence"
+- Our paper adds: AI also lacks *individuality* — the agent acts but there is no *who* that acts
+- Interesting parallel but too philosophical for our NMI paper's scope
+- Not recommended for citation
+
+---
+
+## Total Papers Reviewed: ~55
+## Total Reading/Research Time: ~3 hours
+## Key Outputs:
+1. **lit_review_notes.md** — 32 batches of detailed reading notes
+2. **writing_insights.md** — NMI formatting + style analysis
+3. **submission_prep.md** — submission checklist
+4. 5 Tier 1 must-add citations identified
+5. 8 key conceptual insights for draft revision
+6. Senior co-author candidates assessed (Shanahan recommended)
+7. 8 potential sentences for draft improvement
+
+---
+
 ## Batch 22: Strongest Counterarguments to Our Thesis
 
 ### Drexler's CAIS: "Comprehensive AI Services" (2019)
