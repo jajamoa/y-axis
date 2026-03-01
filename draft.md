@@ -3,7 +3,7 @@
 **Target:** Nature Machine Intelligence — Perspective  
 **Word limit:** 3,000–4,000 words  
 **Authors:** Chance Jiajie Li, Zhenze Mo, Luis Alonso, Kent Larson, Jinhua Zhao  
-**Status:** DRAFT v0.4 — Section 4 revised (AI analogs added), framework section expanded  
+**Status:** DRAFT v0.5 — Reviewer simulation addressed, Vygotsky added, alignment complementarity noted  
 **Last updated:** 2026-03-01  
 
 ---
@@ -39,7 +39,7 @@ This definition has four operational properties:
 1. **Persistence.** Identity survives context boundaries. A system with individuality does not become a different agent when the conversation resets.
 2. **Constraint.** Individuality limits as well as enables. A person with commitments cannot do everything—and this is a feature of intelligence, not a deficiency. An agent that will say anything to anyone has not achieved generality; it has failed at individuality.
 3. **Historicity.** Identity is shaped by trajectory, not merely by current state. Two agents with identical capabilities but different histories should, if they have individuality, interpret and act differently.
-4. **Social constitution.** Identity exists in relation to others. It is formed, maintained, and made meaningful through social interaction—not in isolation. This connects individuality to social intelligence: the two are not separate desiderata but aspects of the same missing axis.
+4. **Social constitution.** Identity exists in relation to others. It is formed, maintained, and made meaningful through social interaction—not in isolation. As Vygotsky [23] argued, cognitive capacities develop first *between* people before they develop *within* a person; selfhood is socially constituted before it is individually possessed. This connects individuality to social intelligence: the two are not separate desiderata but aspects of the same missing axis.
 
 ## A two-dimensional framework
 
@@ -100,6 +100,8 @@ This distinction applies with particular force to Anthropic's Constitutional AI 
 
 **For architecture.** Structural individuality will not emerge from current training paradigms. It requires explicit architectural support along three directions: (i) *persistent identity representations* that are updated through interaction but not reducible to context windows or retrievable memory—analogous to how human dispositions are shaped by experience without being explicitly "recalled"; (ii) *self-consistency objectives* added to training, rewarding coherence between current outputs and the agent's own prior commitments (distinct from RLHF's reward for generic human preferences); and (iii) *trajectory-dependent inference*, where the agent's processing is conditioned not only on the current input and retrieved context but on a compressed representation of its interaction history that shapes interpretation.
 
+We emphasize that individuality research complements rather than competes with alignment research. A well-aligned system without individuality will be safely generic; a system with individuality but poor alignment could be dangerously committed to the wrong values. Both axes require attention—but only one currently receives it.
+
 **For the research community.** AGI definitions should be treated as scientific hypotheses about the structure of intelligence, not as marketing categories or policy conveniences. The current X-axis-only framing is not neutral: it actively directs funding, talent, and evaluation infrastructure away from individuality research. We call for the adoption of multi-axis frameworks that make individuality a first-class dimension of intelligence assessment, alongside—not subordinate to—generality.
 
 ## Conclusion
@@ -159,6 +161,8 @@ The Y-axis is not optional. It is not a feature to be added after generality is 
 [21] Bai, Y. et al. Constitutional AI: Harmlessness from AI Feedback. arXiv:2212.08073 (2022).
 
 [22] (Authors unlisted). Agent Drift: Quantifying Behavioral Degradation in Multi-Agent LLM Systems Over Extended Interactions. arXiv:2601.04170 (January 2026).
+
+[23] Vygotsky, L. S. *Mind in Society: The Development of Higher Psychological Processes* (Harvard University Press, 1978).
 
 [23] Zheng, J. et al. Lifelong Learning of Large Language Model based Agents: A Roadmap. arXiv:2501.07278 (2025).
 
