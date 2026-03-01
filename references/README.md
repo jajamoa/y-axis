@@ -105,7 +105,7 @@
 
 ### 11. Sophia — A Persistent Agent Framework / System 3 (2024)
 **File:** `pdfs/sophia_persistent_agent_2024.pdf`  
-**Citation:** (Authors TBD). A Persistent Agent Framework of Artificial Life. arXiv:2512.18202 (2024)  
+**Citation:** Sun, M., Hong, F., & Zhang, W. (2024). Sophia: A Persistent Agent Framework of Artificial Life. arXiv:2512.18202  
 **Summary:** Proposes "System 3" — a meta-layer above System 1 (perception) and System 2 (deliberation) dedicated to maintaining *narrative identity* and long-horizon adaptation in LLM agents. This is the most direct architectural recognition that current LLMs lack the Y-axis. The paper explicitly maps psychological constructs (identity, goal persistence, self-monitoring) to computational modules, framing narrative identity as an *absent stratum* that must be added. Best positive existence proof for §3.3 — shows individuality and generality are separable design targets requiring distinct architectural modules.
 
 ---
