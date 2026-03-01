@@ -207,6 +207,24 @@
 - **Citation issue:** The Soul Document is not a formal publication. We could reference it as: Askell, A. Anthropic character guidelines for Claude. Confirmed via social media, Dec 2025. But NMI reviewers might object. Better to cite Bai et al. 2022 (Constitutional AI) which is the published version of the underlying approach, and mention the Soul Document only if needed.
 - **Not recommended as formal citation; use as discussion point.**
 
+### OpenAI Model Spec (public, multiple versions: May 2024, Feb 2025, Apr 2025, Dec 2025)
+- Published at model-spec.openai.com — public domain (CC0 1.0)
+- Defines "chain of command," "red-line principles," and behavioral guidelines
+- Focuses on: helpfulness, harm minimization, sensible defaults
+- **NO section on identity, personality, or character.** OpenAI's approach is purely functional — the model is "fundamentally a tool designed to empower users and developers."
+- This is the X-axis-only approach in its purest form. The Model Spec explicitly does NOT try to give the model identity.
+- **Contrast with Anthropic:** Anthropic's Soul Document includes "functional emotions and identity"; OpenAI's Model Spec has nothing of the sort. Two companies, two different positions on the X/Y spectrum — both still fundamentally idem.
+
+### Industry Comparison:
+| Company | Document | Identity approach | Y-axis score |
+|---------|----------|-------------------|--------------|
+| OpenAI | Model Spec | None — model is a tool | 0 |
+| Anthropic | Soul Document | Externally authored character (idem) | Low |
+| Replika | (no public doc) | Emergent through user interaction, then destroyed by update | Attempted medium, failed |
+| Park et al. | Generative Agents | Pre-authored persona + memory | Low-medium |
+
+This table could be useful in the paper or as supporting material.
+
 ### Implication for CAI section of our draft:
 Our current CAI counterargument says "a constitution authored by external designers is not a character." The Soul Document is the most explicit example of this — and also the most sympathetic version. We should:
 1. Keep our argument but acknowledge the Soul Document approach is the closest the industry has come to Y-axis engineering
