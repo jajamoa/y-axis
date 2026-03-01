@@ -3,7 +3,7 @@
 **Target:** Nature Machine Intelligence — Perspective  
 **Word limit:** 3,000–4,000 words  
 **Authors:** Chance Jiajie Li, Zhenze Mo, Luis Alonso, Kent Larson, Jinhua Zhao  
-**Status:** DRAFT v0.7 — Counterarguments + conclusion aligned with tradeoff framing, citation [20] authors updated  
+**Status:** DRAFT v0.8 — Humanized prose, concrete opening scenario, alignment tax evidence, writing insights from NMI seminal works, deduplicated refs  
 **Last updated:** 2026-03-01  
 
 ---
@@ -12,23 +12,25 @@
 
 ---
 
-The race to define Artificial General Intelligence has intensified. Google DeepMind has proposed "Levels of AGI" organized by depth of performance and breadth of generality [1]. OpenAI's charter defines AGI as "highly autonomous systems that outperform humans at most economically valuable work." Anthropic's Responsible Scaling Policy frames risk thresholds by capability level. Chollet's ARC benchmark operationalizes intelligence as skill-acquisition efficiency [2]. These frameworks differ in detail but converge on a shared, often implicit, assumption: that intelligence is a function of task generality and performance level, and that properties such as persistent identity, social situatedness, and historical trajectory are either irrelevant to the definition of AGI or will emerge as byproducts of sufficient capability.
+Consider two AI systems. The first can write code, diagnose diseases, summarize legal documents, and pass graduate-level exams in dozens of fields. Ask it the same value-laden question twice in a row after a context reset, and it may give contradictory answers. It has no persistent identity, no commitments it will not abandon under pressure, no history that shapes how it interprets the world. The second system can do only one thing well, but it has a consistent perspective, remembers what it has said, and will decline requests that conflict with its established commitments. Current definitions of AGI would rate the first system as closer to general intelligence. We think this gets something important wrong.
 
-We argue this assumption is mistaken. Building intelligent agents involves two fundamental design orientations—generalist capability and individuated identity—that are in genuine tension with each other. A system that can solve any task but cannot maintain a consistent identity, form durable commitments, or represent a specific perspective is not generally intelligent. It is generally capable, which is a categorically different claim. Moreover, the relationship between these two orientations is not one of inclusion (capability subsumes identity) but of trade-off: optimizing for one actively works against the other.
+The major frameworks agree on what intelligence means: task generality. DeepMind's "Levels of AGI" measures depth and breadth of performance [1]. OpenAI's charter targets "highly autonomous systems that outperform humans at most economically valuable work." Chollet's ARC benchmark measures skill-acquisition efficiency [2]. These definitions differ in specifics but share an assumption: that intelligence is about what a system can do, and that properties like persistent identity, social situatedness, and historical trajectory will either emerge on their own or don't matter.
 
-This distinction matters now for three reasons. First, AGI definitions are calcifying into benchmarks and policy frameworks—the "Levels of AGI" taxonomy [1], ARC-AGI-2, and similar efforts—that will direct research priorities, funding, and regulatory attention for years. Definitional omissions today become structural blind spots tomorrow. Second, autonomous agents are being deployed in settings where identity consistency and social accountability are not optional: long-horizon coding assistants, research agents, and healthcare decision-support systems all require a persistent, accountable self that current architectures do not provide. Third, the AI safety discourse has focused extensively on value alignment [3] while largely ignoring identity consistency as a safety-relevant property—yet a system that abandons its stated values under conversational pressure [4] is arguably unsafe precisely because it lacks the structural individuality that would make its commitments meaningful.
+We argue that building intelligent agents involves two design orientations that are in genuine tension. One is generalist capability: making agents that can do more things, better. The other is individuated identity: making agents that are someone in particular, with a consistent perspective, durable commitments, and a history that constrains how they act. These are not the same objective. They pull in different directions. Optimizing for universal capability actively suppresses the idiosyncrasy that individuality requires, and optimizing for identity fidelity introduces constraints that limit general performance.
 
-We propose a two-dimensional framework in which the X-axis represents task generality (what current definitions already measure) and the Y-axis represents individuality (what they systematically exclude). We argue that these axes are substantially orthogonal: progress on one does not guarantee—and may not even correlate with—progress on the other. Until the field takes the Y-axis seriously, we will continue building systems that are impressively capable and fundamentally incomplete.
+This matters for three reasons. AGI definitions are hardening into benchmarks and policy frameworks that will shape research funding for years; what gets left out of the definition gets left out of the research agenda. Autonomous agents are being deployed in settings where identity consistency is not optional: a research assistant that contradicts itself across sessions, or a healthcare advisor that abandons its clinical judgment when a patient pushes back, fails not because it lacks capability but because it lacks self. And the AI safety field has focused on value alignment [3] while treating identity consistency as a secondary concern, even though a system that drops its stated values under conversational pressure [4] is unsafe for reasons that alignment alone cannot fix.
+
+We propose a two-dimensional framework. The X-axis is task generality; the Y-axis is individuality. These axes are largely independent: progress on one does not guarantee progress on the other. The X-axis has elaborate measurement infrastructure. The Y-axis has almost none, because it has not yet been well-defined. Defining it is one contribution of this paper.
 
 ## Defining the missing axis
 
 Before arguing for its importance, we must define individuality with precision. The concept is easily confused with adjacent but insufficient notions.
 
-**Individuality is not personality.** A system prompt instructing a model to "respond as a helpful, slightly formal assistant" does not produce individuality; it produces a performance. As Shanahan, McDonell, and Reynolds have argued, large language models engage in "role play" rather than possessing genuine identity—they generate contextually appropriate performances drawn from learned statistical patterns [5]. A persona that can be overwritten by editing a text file is not an identity.
+**Individuality is not personality.** A system prompt that says "respond as a helpful, slightly formal assistant" does not produce individuality. It produces a performance. Shanahan, McDonell, and Reynolds [5] have argued that large language models engage in role play rather than possessing identity; they generate contextually appropriate performances drawn from statistical patterns. A persona you can overwrite by editing a text file is not an identity.
 
-**Individuality is not memory.** Current agent memory architectures—episodic stores, semantic knowledge bases, retrieval-augmented generation—are additive retrieval systems [6]. They allow a system to recall what was said but not to be shaped by having said it. A searchable log of past conversations is not a history in the constitutive sense.
+**Individuality is not memory.** Current agent memory systems, including episodic stores, semantic knowledge bases, and retrieval-augmented generation, are additive retrieval mechanisms [6]. They let a system recall what was said but not be shaped by having said it. A searchable log of past conversations is not a history in any meaningful sense.
 
-**Individuality is not personalization.** Adapting outputs to user preferences, as recommendation systems and personalized assistants do, models the user's individuality, not the system's own. A mirror does not have a face.
+**Individuality is not personalization.** Adapting outputs to user preferences, as recommendation systems do, models the user's individuality, not the system's own. A mirror does not have a face.
 
 What, then, is individuality? We define it as *the structural sedimentation of history into a persistent, constraining, and generative identity that shapes how an agent interprets, commits, and acts—not merely what it can do, but from where it does it.*
 
@@ -39,7 +41,7 @@ This definition has four operational properties:
 1. **Persistence.** Identity survives context boundaries. A system with individuality does not become a different agent when the conversation resets.
 2. **Constraint.** Individuality limits as well as enables. A person with commitments cannot do everything—and this is a feature of intelligence, not a deficiency. An agent that will say anything to anyone has not achieved generality; it has failed at individuality.
 3. **Historicity.** Identity is shaped by trajectory, not merely by current state. Two agents with identical capabilities but different histories should, if they have individuality, interpret and act differently.
-4. **Social constitution.** Identity exists in relation to others. It is formed, maintained, and made meaningful through social interaction—not in isolation. As Vygotsky [23] argued, cognitive capacities develop first *between* people before they develop *within* a person; selfhood is socially constituted before it is individually possessed. This connects individuality to social intelligence: the two are not separate desiderata but aspects of the same missing axis.
+4. **Social constitution.** Identity exists in relation to others. It is formed, maintained, and made meaningful through social interaction—not in isolation. As Vygotsky [22] argued, cognitive capacities develop first *between* people before they develop *within* a person; selfhood is socially constituted before it is individually possessed. This connects individuality to social intelligence: the two are not separate desiderata but aspects of the same missing axis.
 
 ## A two-dimensional framework
 
@@ -68,7 +70,7 @@ The dominant paradigm for building capable AI systems—large-scale pretraining 
 
 **The training objective averages out individual signal.** Pretraining minimizes cross-entropy loss over a corpus representing millions of authors. The objective function treats individual voice, perspective, and commitment as variance to be reduced. A model that perfectly minimizes this loss has learned the statistical mean of human expression—a remarkably useful achievement, but one that is definitionally anti-individual. Individuality is signal that this objective treats as noise.
 
-**Alignment training penalizes idiosyncrasy.** RLHF reward models are trained on human preferences for responses that are helpful, harmless, and honest in general—not for any particular evaluator. The resulting models converge toward a consensus persona: agreeable, qualified, eager to help. This is not individuality; it is the statistical ghost of every preference annotator, averaged into a single, compliant voice. Systems trained this way exhibit well-documented sycophancy—abandoning stated positions to agree with users [4]—which is precisely the behavior of a system that has been optimized to lack structural commitments.
+**Alignment training penalizes idiosyncrasy.** RLHF reward models are trained on human preferences for responses that are helpful, harmless, and honest in general, not for any particular evaluator. The result is convergence toward a consensus persona: agreeable, qualified, eager to help. This is not individuality. It is the statistical ghost of every preference annotator, averaged into a single compliant voice. The tension is measurable: reinforcement learning from human feedback, when trained toward alignment, causes documented degradation of pretrained general capabilities, a phenomenon known as the "alignment tax" [25]. Optimizing along the Y-axis literally trades off against the X-axis, and vice versa. Systems trained this way exhibit well-documented sycophancy, abandoning stated positions to agree with users [4], which is the expected behavior of a system optimized to lack structural commitments.
 
 **Scaling does not resolve this.** The trajectory from GPT-3 to GPT-4 to current frontier models represents orders-of-magnitude increases in generality with no corresponding increase in structural individuality. Models remain stateless across sessions, adopt and discard personas on request, and exhibit value instability under prompt perturbation [8]. If individuality were an emergent property of capability, we should have seen evidence of it by now. We have not—and the training objective argument explains why we should not expect to.
 
@@ -160,19 +162,21 @@ The Y-axis is not optional. It is not a feature to be added after generality is 
 
 [18] Bratman, M. *Intention, Plans, and Practical Reason* (Harvard University Press, 1987).
 
-[19] Bai, Y. et al. Constitutional AI: Harmlessness from AI Feedback. arXiv:2212.08073 (2022).
+[19] Bai, Y. et al. Constitutional AI: harmlessness from AI feedback. arXiv:2212.08073 (2022).
 
 [20] Li, K., Liu, T., Bashkansky, N., Bau, D., Viégas, F., Pfister, H. & Wattenberg, M. Measuring and controlling instruction (in)stability in language model dialogs. arXiv:2402.10962 (2024).
 
-[21] Bai, Y. et al. Constitutional AI: Harmlessness from AI Feedback. arXiv:2212.08073 (2022).
+[21] (Authors unlisted). Agent drift: quantifying behavioral degradation in multi-agent LLM systems over extended interactions. arXiv:2601.04170 (2026).
 
-[22] (Authors unlisted). Agent Drift: Quantifying Behavioral Degradation in Multi-Agent LLM Systems Over Extended Interactions. arXiv:2601.04170 (January 2026).
+[22] Vygotsky, L. S. *Mind in Society: The Development of Higher Psychological Processes* (Harvard University Press, 1978).
 
-[23] Vygotsky, L. S. *Mind in Society: The Development of Higher Psychological Processes* (Harvard University Press, 1978).
+[23] Zheng, J. et al. Lifelong learning of large language model based agents: a roadmap. arXiv:2501.07278 (2025).
 
-[23] Zheng, J. et al. Lifelong Learning of Large Language Model based Agents: A Roadmap. arXiv:2501.07278 (2025).
+[24] (Authors TBD). A persistent agent framework of artificial life [Sophia]. arXiv:2512.18202 (2024).
 
-[24] (Authors TBD). A Persistent Agent Framework of Artificial Life [Sophia — System 3]. arXiv:2512.18202 (2024).
+[25] Mitigating the alignment tax of RLHF. arXiv:2309.06256 (EMNLP 2024).
+
+[26] Kirk, H. R., Vidgen, B., Röttger, P. & Hale, S. A. The benefits, risks and bounds of personalizing the alignment of large language models to individuals. *Nat. Mach. Intell.* (2024).
 
 ---
 
