@@ -3,7 +3,7 @@
 **Target:** Nature Machine Intelligence — Perspective  
 **Word limit:** 3,000–4,000 words  
 **Authors:** Chance Jiajie Li, Zhenze Mo, Luis Alonso, Kent Larson, Jinhua Zhao  
-**Status:** DRAFT v0.6 — Major revision: reframed as Generalist vs Identity Orientation, tradeoff mechanism, use-case spectrum  
+**Status:** DRAFT v0.7 — Counterarguments + conclusion aligned with tradeoff framing, citation [20] authors updated  
 **Last updated:** 2026-03-01  
 
 ---
@@ -94,7 +94,7 @@ Frankfurt's analysis of personhood [17] sharpens the point. What distinguishes p
 
 **"Individuality will emerge automatically with scale."** This is an empirical prediction, and the evidence to date does not support it. As argued above, the training objectives of current paradigms structurally select against individuality. Scaling a model trained to minimize deviation from the aggregate does not produce an individual—it produces a better average. The analogy is apt: a library does not develop a perspective by adding more books. Moreover, the specific properties of individuality we have identified—persistence across contexts, constraining commitments, historicity, and social constitution—are not the kinds of properties that have been observed to emerge from scale in language models. What emerges with scale is broader capability, not deeper selfhood.
 
-**"AGI is about capability, not personality. This is a product concern, not a scientific one."** This objection assumes that the definition of intelligence is settled and that individuality is a feature to be added afterward. We are arguing that the definition is wrong. If "general intelligence" is meant to capture what makes human intelligence distinctive—and this is invariably the aspiration—then excluding social intelligence and individuality is not parsimony; it is omission. When deployed systems fail because they cannot maintain consistent identities, honor commitments, or be held accountable, these are not product failures that better UX can fix. They are consequences of a definition that has been baked into architectures and training objectives. Deployment failures are definition failures.
+**"AGI is about capability, not personality. This is a product concern, not a scientific one."** This objection conflates individuality with personalization and mislocates the Y-axis in the product layer rather than the architectural layer. As the use-case spectrum demonstrates, identity orientation is not a UX feature to be skinned on top of a capable system—it requires fundamentally different training objectives, evaluation criteria, and architectural commitments. A social simulation that needs agents representing diverse, conflicting perspectives cannot be built by adding personas to a capability-optimized model; the model's training has actively eliminated the variance that the simulation requires. When deployed systems fail because they cannot maintain consistent identities or be held socially accountable, these are not product failures that better prompting can fix. They are consequences of a design orientation that has been baked into architectures and training objectives. The tradeoff is real and architectural, not cosmetic.
 
 **"Individuality is achievable through conditioning—system prompts, conversation history, and in-context learning already provide it."** This is the strongest objection and requires the most careful response. We draw a distinction between *shallow conditioning* and *structural individuality*. Shallow conditioning is externally imposed and infinitely malleable: a system prompt can be rewritten, a conversation history can be cleared, and the system's "identity" vanishes. Structural individuality is internally constituted and resistant to arbitrary change—not immutable, but requiring reasons and narrative coherence to revise. The test is *principled refusal*: a system with genuine individuality should decline to act against its constituted identity, not because of a content filter, but because of who it is. A system whose "commitments" evaporate when a user rephrases a question does not have individuality; it has a system prompt.
 
@@ -112,13 +112,13 @@ We emphasize that individuality research complements rather than competes with a
 
 ## Conclusion
 
-Ignoring individuality does not make AGI more objective. It makes it incomplete.
+Building intelligent agents requires navigating a two-dimensional design space, not a one-dimensional capability ladder. The X-axis—generalist capability—is where the field's attention, funding, and measurement infrastructure are concentrated. The Y-axis—individuated identity—is where they are not.
 
-The field's current trajectory optimizes for systems that can answer any question but have no identity, form no durable commitments, and maintain no coherent perspective across time. Such systems are remarkable tools. They are not generally intelligent in any sense that the cognitive sciences, philosophy of mind, or ordinary human understanding would recognize.
+This is not because the Y-axis is less important. It is because it has not yet been well-defined, well-measured, or well-understood as an independent design objective. We have offered a definition (structural sedimentation of history), a framework (the generalist-identity spectrum), an architectural argument (the tension between capability optimization and identity preservation), and concrete proposals for evaluation and architecture.
 
-We have argued that AGI requires two axes, not one: generality (X) and individuality (Y). These axes are substantially orthogonal—current training paradigms optimize along X while structurally selecting against Y. Progress on generality has been extraordinary. Progress on individuality has not begun, in part because the field's definitions do not recognize it as a target.
+The two axes are in genuine tension: architectural choices that maximize capability actively suppress individuality, and vice versa. This tension is not a problem to be solved but a design space to be navigated. Different applications—from productivity assistants to social simulations—require different positions along the spectrum. A field that recognizes only one axis cannot navigate this space; it can only push further along X while remaining blind to Y.
 
-The Y-axis is not optional. It is not a feature to be added after generality is solved. It is a constitutive dimension of intelligence that current definitions, benchmarks, and architectures systematically exclude. Until the field takes it seriously, AGI will remain—by the field's own definitions—general, and—by any adequate understanding of intelligence—incomplete.
+The Y-axis is not optional. It is not a feature to be added after generality is solved. It is an independent dimension of intelligence that current definitions, benchmarks, and architectures systematically exclude. Until the field takes it seriously, we will continue building agents that are impressively capable and fundamentally one-dimensional.
 
 ---
 
@@ -162,7 +162,7 @@ The Y-axis is not optional. It is not a feature to be added after generality is 
 
 [19] Bai, Y. et al. Constitutional AI: Harmlessness from AI Feedback. arXiv:2212.08073 (2022).
 
-[20] Li, K. et al. Measuring and Controlling Instruction (In)Stability in Language Model Dialogs. arXiv:2402.10962 (2024).
+[20] Li, K., Liu, T., Bashkansky, N., Bau, D., Viégas, F., Pfister, H. & Wattenberg, M. Measuring and controlling instruction (in)stability in language model dialogs. arXiv:2402.10962 (2024).
 
 [21] Bai, Y. et al. Constitutional AI: Harmlessness from AI Feedback. arXiv:2212.08073 (2022).
 
