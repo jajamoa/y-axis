@@ -56,7 +56,21 @@
 
 ---
 
-### 8. Identity Drift in LLM Conversations (2024)
+### 8. Measuring and Controlling Persona Drift in Language Model Dialogs (2024)
+**File:** `pdfs/persona_drift_2024.pdf`  
+**Citation:** Li, K. et al. (2024). Measuring and Controlling Persona Drift in Language Model Dialogs. arXiv:2402.10962  
+**Summary:** Empirical study demonstrating that prompt-based personas degrade systematically over extended conversations — the model's outputs drift away from the stipulated character as context length grows. The mechanism is identified as *attention decay*: transformer attention over the system prompt weakens as dialogue tokens accumulate, diluting the persona signal. Crucially, this is presented as a known limitation of current architectures, not a bug to be patched. For our argument: this paper shows that externally specified "identity" (system prompt personas) is architecturally fragile — it degrades with conversation length. This is precisely the distinction between shallow conditioning and structural individuality we argue in §2.2 and §5.3.
+
+---
+
+### 9. Constitutional AI: Harmlessness from AI Feedback (2022)
+**File:** `pdfs/bai2022_constitutional_ai.pdf`  
+**Citation:** Bai, Y. et al. (2022). Constitutional AI: Harmlessness from AI Feedback. arXiv:2212.08073. Anthropic.  
+**Summary:** Introduces Constitutional AI (CAI), Anthropic's approach to aligning LLMs via a set of externally specified "principles" (a "constitution") that guide self-critique and RLHF. This is the most sophisticated existing approach to giving AI systems something like values. For our argument: CAI is the strongest case *against* the claim that current systems have no individuality-like properties. We must address it directly. The key distinction: CAI produces compliance with an externally authored constitution — the principles are specified by Anthropic engineers, not generated from the model's own historical trajectory. This is exactly the difference between idem-identity (consistent rule-following) and ipse-identity (self-constituted character). A model that follows Anthropic's constitution does not have individuality any more than an employee who follows a company handbook has a personal identity.
+
+---
+
+### 10. Identity Drift in LLM Conversations (2024)
 **File:** `pdfs/identity_drift_llm_2024.pdf`  
 **Citation:** (Authors TBD). Examining Identity Drift in Conversations of LLM Agents. arXiv:2412.00804. (2024)  
 **Summary:** Empirical study showing that LLMs exhibit *identity drift* — their interaction patterns and styles change over the course of extended conversations, even with consistent system prompts. This directly operationalizes the absence of our Y-axis: the paper demonstrates that current models lack structural identity persistence. Use in Section 3.2 (reinterpreting existing results) and Section 3.3 (existence proof): identity drift is the *empirical signature* of what our framework predicts — a system with no individuality axis will drift, because context pressure always outweighs any structural constraint.

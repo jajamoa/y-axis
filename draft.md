@@ -64,6 +64,8 @@ These observations allow us to reinterpret several well-known phenomena. Sycopha
 
 The separability of individuality and generality is further demonstrated by systems that explicitly model individuality without increasing general capability. Cognitive architectures such as SOAR and ACT-R [9, 10] maintain persistent identity, memory, and goal structures without approaching broad task generality. Personalized federated learning produces models that capture individual data distributions while neither targeting nor achieving general capability [11]. Conversely, scaling frontier models to ever-greater generality has not produced structural individuality. The two objectives are separable in the design space—they respond to different architectural choices and different training signals.
 
+Recent empirical work provides direct negative evidence. Li et al. (2024) demonstrate that prompt-based persona conditioning degrades systematically over extended conversations: transformer attention over system-prompt tokens weakens as dialogue accumulates, causing measurable drift in stylistic and behavioral consistency [Li et al., 2024]. This is not an engineering limitation awaiting a patch—it is a structural consequence of how attention-based architectures process sequential context, and it affects frontier models including GPT-4. In multi-agent settings, behavioral drift compounds: systems that begin with well-specified roles progressively deviate from their design specifications over extended interaction sequences, without any parameter change and without explicit adversarial pressure [arXiv:2601.04170]. These are not anecdotal observations; they are documented failure modes that admit no solution within the current paradigm, because they arise from the absence of structural individuality—not from any correctable implementation error.
+
 ## Intelligence requires social situatedness
 
 The exclusion of individuality from AGI definitions is not merely an engineering oversight; it contradicts the cognitive and behavioral sciences' understanding of what intelligence is.
@@ -83,6 +85,8 @@ Bratman's work on intention and planning [18] makes a related point: rational ag
 **"AGI is about capability, not personality. This is a product concern, not a scientific one."** This objection assumes that the definition of intelligence is settled and that individuality is a feature to be added afterward. We are arguing that the definition is wrong. If "general intelligence" is meant to capture what makes human intelligence distinctive—and this is invariably the aspiration—then excluding social intelligence and individuality is not parsimony; it is omission. When deployed systems fail because they cannot maintain consistent identities, honor commitments, or be held accountable, these are not product failures that better UX can fix. They are consequences of a definition that has been baked into architectures and training objectives. Deployment failures are definition failures.
 
 **"Individuality is achievable through conditioning—system prompts, conversation history, and in-context learning already provide it."** This is the strongest objection and requires the most careful response. We draw a distinction between *shallow conditioning* and *structural individuality*. Shallow conditioning is externally imposed and infinitely malleable: a system prompt can be rewritten, a conversation history can be cleared, and the system's "identity" vanishes. Structural individuality is internally constituted and resistant to arbitrary change—not immutable, but requiring reasons and narrative coherence to revise. The test is *principled refusal*: a system with genuine individuality should decline to act against its constituted identity, not because of a content filter, but because of who it is. A system whose "commitments" evaporate when a user rephrases a question does not have individuality; it has a system prompt.
+
+This distinction applies with particular force to Anthropic's Constitutional AI [Bai et al., 2022], the most sophisticated existing attempt to give AI systems something like stable values. Constitutional AI trains models to follow a set of externally authored principles—a "constitution" specifying what kinds of responses to give, avoid, and prefer. It is an important alignment technique. But it does not produce individuality in our sense. The principles are specified by Anthropic engineers, not generated from the model's own historical trajectory. The model follows a constitution written for it; it does not have a character that has developed through its own experience. The difference is the same as between an employee who follows a company handbook and a person who acts from deeply internalized values forged through a lifetime of choices. Constitutional compliance is a form of idem-identity—consistent rule-following. What we are calling for is ipse-identity: a self whose commitments are genuinely its own. Moreover, the empirical architecture of persona drift [Li et al., 2024] demonstrates a fundamental limitation: even well-specified prompts and constitutions degrade over extended interactions as transformer attention over the initial context decays with conversation length. The "identity" delivered by conditioning is architecturally impermanent.
 
 ## Implications
 
@@ -141,6 +145,12 @@ The Y-axis is not optional. It is not a feature to be added after generality is 
 [17] Frankfurt, H. G. Freedom of the will and the concept of a person. *The Journal of Philosophy* **68**, 5–20 (1971).
 
 [18] Bratman, M. *Intention, Plans, and Practical Reason* (Harvard University Press, 1987).
+
+[19] Bai, Y. et al. Constitutional AI: Harmlessness from AI Feedback. arXiv:2212.08073 (2022).
+
+[20] Li, K. et al. Measuring and Controlling Persona Drift in Language Model Dialogs. arXiv:2402.10962 (2024).
+
+[21] (Authors TBD). Agent Drift: Quantifying Behavioral Degradation in Multi-Agent LLM Systems Over Extended Interactions. arXiv:2601.04170 (2025).
 
 ---
 
