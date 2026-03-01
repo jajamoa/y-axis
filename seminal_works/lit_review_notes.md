@@ -309,6 +309,27 @@
 
 ---
 
+## Batch 16: Personalization ≠ Individuality
+
+### NeurIPS 2024 Workshop: "Pluralistic Alignment"
+- Organizers recognize one-size-fits-all alignment is insufficient
+- Focus: how to align AI with diverse, conflicting human preferences
+- **Key distinction for our paper:** Pluralistic alignment is about adapting to *user diversity*. Our Y-axis is about *agent identity*. Related but orthogonal. You can have a personalized system (adapts to user preferences) that has no identity of its own. You can have an individuated system (has its own identity) that doesn't personalize to users.
+- Kirk et al. [24] bridges these — which is why they're already cited.
+
+### "A Survey on Personalized and Pluralistic Preference Alignment in LLMs" (arXiv:2504.07070, Apr 2025)
+- Comprehensive survey of the personalization landscape
+- Distinguishes user behavior prediction from preference alignment
+- Mentions systems with "personalized user memory" — but this is memory of the USER, not memory constituting the AGENT'S identity
+- **Not a must-cite** but useful if reviewer conflates personalization with individuality
+
+### "Interact to Align" (NeurIPS 2024)
+- LLMs that infer user preferences through multi-turn conversation
+- This is the X-axis serving Y-axis use cases: general capability being applied to learn about individual users
+- **Our paper argues something different:** the agent itself needs individuality, not just the ability to model others' individuality
+
+---
+
 ## Reading Plan (next 2 hours)
 
 ### Priority searches remaining:
@@ -317,5 +338,34 @@
 3. **Philosophical critiques of AGI** — any recent philosophy of AI papers that notice the identity gap?
 4. **NMI formatting and style** — look at actual published Perspectives for structural patterns (section headers, figure placement, reference density)
 5. **Senior co-author candidates** — check recent publications by Shanahan, Bengio, Thompson on identity-adjacent topics
+
+---
+
+## Batch 15: Senior Co-Author Candidate Assessment
+
+### Murray Shanahan (Imperial College / DeepMind)
+- **Already cited:** "Role-play with large language models" (2023)
+- **Also relevant:** "Talking About Large Language Models" (2023) — warns against anthropomorphizing LLMs
+- **Fit with our paper:** EXCELLENT. His role-play paper is foundational to our argument (LLMs as simulators, not individuals). He'd add credibility and NMI reviewers would recognize the intellectual lineage. His "simulacra" framing is the X-axis anchor; our Y-axis is the complement.
+- **Risk:** He might resist the paper if it implies LLMs *should* have individuality (his position is they don't and we shouldn't pretend they do). But our paper doesn't claim current LLMs have individuality — it argues the Y-axis should be *designed for*. Compatible.
+- **Recommendation: Top choice for senior author.**
+
+### Evan Thompson (UBC)
+- **Already cited:** Varela, Thompson & Rosch (1991), Thompson (2007) Mind in Life
+- **Fit with our paper:** STRONG. He's THE person for 4E cognition and enactivism. Adding him would give the philosophical sections bulletproof credibility.
+- **Risk:** He's a philosopher, not an ML researcher. NMI reviewers might not know him. Also, his recent work doesn't focus on AI — it's more contemplative neuroscience and phenomenology.
+- **Recommendation: Second choice. Best if a reviewer questions the philosophical foundations.**
+
+### Yoshua Bengio (Mila)
+- **Fit with our paper:** MODERATE. He's a famous name and would give the paper maximum visibility. His recent work on "System 2" deep learning is tangentially relevant (deliberate vs automatic cognition). But he hasn't published on identity or individuality specifically.
+- **Risk:** His name might create expectations the paper is about deep learning architecture, not philosophy-of-mind applied to agent design. Also, getting Bengio as co-author on a Perspective is ambitious.
+- **Recommendation: Third choice. Best for pure visibility, weakest for intellectual fit.**
+
+### Julian De Freitas (Harvard Business School)
+- **NOT previously discussed but should be considered.**
+- Published the Replika identity discontinuity paper and the NMI "emotional risks" comment
+- **Fit:** STRONG and COMPLEMENTARY. He brings empirical evidence from HBS-style behavioral research. Having him would signal the paper bridges ML and social science.
+- **Risk:** He's not an ML systems researcher; paper might read as too behavioral.
+- **Recommendation: Dark horse candidate. Excellent fit if Shanahan isn't available.**
 
 *Last updated: 2026-03-01 03:25 EST*
