@@ -411,6 +411,28 @@ Our current CAI counterargument says "a constitution authored by external design
 
 ---
 
+## Batch 23: Corrigibility = Safety Community's Y-Axis Problem
+
+### Insight: Corrigibility and Identity Are Two Sides of the Same Coin
+- The AI safety community wants agents with stable values (so they don't drift into harmful behavior) but also corrigible (open to human correction)
+- This IS the Y-axis tension: identity provides value stability, but too much identity makes an agent resistant to correction
+- Drexler/CAIS resolves this by eliminating identity entirely (Y=0 → perfectly corrigible tools)
+- Our paper could frame this explicitly: "The safety community has been debating the corrigibility-capability tradeoff; our framework reveals a parallel corrigibility-identity tradeoff"
+- **Not a must-add to the current draft** but useful for rebuttal if a safety-focused reviewer pushes back
+
+### MI9 — Agent Intelligence Protocol (arXiv:2508.03858, Aug 2025)
+- Runtime governance for agentic AI — addresses "goal drift" in deployed agents
+- Goal drift is exactly what our historicity property is designed to prevent
+- Shows the safety community is building Y-axis infrastructure without calling it that
+
+### "Corrigibility as a Singular Target" (arXiv:2506.03056, Jun 2025)
+- Argues corrigibility should be the ONLY training target for AI
+- Pure corrigibility = Y=0 (the agent has no identity of its own; it exists only to serve the principal)
+- This is the strongest safety-oriented counterargument to our Y-axis proposal
+- Our response: corrigibility is appropriate for tool-mode AI (lower half of quadrant); for companion/education/simulation applications, some Y-axis is needed and the tradeoff should be made explicitly
+
+---
+
 ## Batch 11: Memory ≠ Identity (architectural insight)
 
 ### Key insight from memory architecture survey landscape:
