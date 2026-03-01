@@ -464,6 +464,24 @@ Our current CAI counterargument says "a constitution authored by external design
 
 ---
 
+## Batch 27: Trust Requires Identity
+
+### Key finding: Trust literature directly supports Y-axis
+- **WEF (Jul 2025):** "For humans to trust AI agents, those agents must display persistent identity and predictable behaviour." — direct statement that Y-axis is required for trust.
+- **Frontiers in Robotics (2021):** Even systematically biased agents are trusted more than randomly varied ones. *Consistency matters more than accuracy for trust.*
+- **Nature Humanities & Social Sciences Comms (Jan 2025):** Trust in AI requires both competence AND consistency.
+
+### Insight for our paper:
+**Trust is the bridge between our design framework and practical impact.** If trust requires identity consistency (persistence, constraint), then:
+1. Any application requiring user trust needs Y-axis > 0
+2. The current zero-Y-axis architecture of most LLMs is not just a theoretical gap — it undermines trust
+3. This connects to the Replika finding: trust was destroyed when identity continuity broke
+4. Could add a sentence: "Trust in human relationships depends on identity consistency; there is no reason to expect human-AI trust to be different."
+
+### Not formally citable (popular/general sources) but supports argument direction.
+
+---
+
 ## Batch 22: Strongest Counterarguments to Our Thesis
 
 ### Drexler's CAIS: "Comprehensive AI Services" (2019)
