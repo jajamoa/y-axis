@@ -86,7 +86,7 @@ Notably, recent architecture proposals have begun to recognize this gap independ
 
 The exclusion of individuality from AGI definitions is not merely an engineering oversight; it contradicts the cognitive and behavioral sciences' understanding of what intelligence is.
 
-The social intelligence hypothesis, developed by Humphrey and Dunbar [12, 13], holds that human cognitive abilities evolved primarily to navigate complex social environments—not to solve abstract problems. Theory of Mind, the capacity to attribute mental states to others, is a core component of human intelligence [14] and is inseparable from having a self whose mental states can be represented in turn. Social cognition is not an application of general intelligence; it is a constitutive condition of it. For AGI definitions, the implication is direct: a framework that measures only task performance while ignoring the social-cognitive axis is measuring a projection of intelligence, not the thing itself.
+The social intelligence hypothesis, developed by Humphrey and Dunbar [12, 13], holds that human cognitive abilities evolved primarily to navigate complex social environments—not to solve abstract problems. Theory of Mind, the capacity to attribute mental states to others, is a core component of human intelligence [14] and is inseparable from having a self whose mental states can be represented in turn. Social cognition is not an application of general intelligence; it is a necessary condition of it. Recent work in NMI has argued for "a social path to human-like artificial intelligence" [27], emphasizing that social interaction generates the kind of continuously novel data that static benchmarks cannot provide. Our argument extends this: the social path requires not just interaction but a *someone* who interacts, an individuated agent whose identity is constituted through and accountable within social relationships. For AGI definitions, the implication is direct: a framework that measures only task performance while ignoring the social-cognitive axis is measuring a projection of intelligence, not the thing itself.
 
 The 4E cognition framework—embodied, embedded, enacted, and extended—reinforces this point [15, 16]. Intelligence, on this view, is not a function computed in isolation by an abstract reasoner. It is constituted through ongoing interaction between an agent, its environment, and other agents. A system without persistent identity cannot be embedded in a social world in the way that intelligence requires, because social embedding presupposes a *someone* to be embedded. This is precisely what the Y-axis captures: not a feature to be appended to generality, but a structural condition for the kind of situated agency that intelligence requires.
 
@@ -177,6 +177,8 @@ The Y-axis is not optional. It is not a feature to be added after generality is 
 [25] Lin, Y., Lin, H., Xiong, W., Diao, S., Liu, J., Zhang, J., Pan, R., Wang, H., Hu, W. & Zhang, H. Mitigating the alignment tax of RLHF. *Proc. EMNLP* 580–606 (2024). arXiv:2309.06256.
 
 [26] Kirk, H. R., Vidgen, B., Röttger, P. & Hale, S. A. The benefits, risks and bounds of personalizing the alignment of large language models to individuals. *Nat. Mach. Intell.* (2024).
+
+[27] Tuyls, K. et al. A social path to human-like artificial intelligence. *Nat. Mach. Intell.* **5**, 1181–1188 (2023).
 
 ---
 
