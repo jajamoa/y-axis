@@ -77,13 +77,18 @@ The **orthogonality claim:** These axes are substantially independent. A system 
 
 ### 3.1 The Training Objective Argument
 
-Current LLM training (pretraining + RLHF/DPO) optimizes for:
-- Next-token prediction on a corpus representing the **statistical mean** of human expression
-- Reward models that score **generic helpfulness**, actively penalizing idiosyncratic or opinionated responses
+**[DRAFTED BY PAUL 🧠 — needs Professor review]**
 
-This objective **mathematically converges away from individuality**: the loss function minimizes deviation from the aggregate, treating individual voice as noise.
+The absence of individuality in current language models is not a design oversight awaiting correction. It is a structural consequence of how these systems are trained.
 
-<!-- TODO: Formalize this — can we show that the cross-entropy objective over a multi-author corpus provably averages out individual signal? -->
+Large language model training proceeds in two stages, each of which independently pushes against individuality. In the pretraining stage, the model minimizes cross-entropy loss over a corpus comprising text from an enormous diversity of authors, contexts, and communities. The optimal solution to this objective is not to learn any individual's voice — it is to learn the conditional distribution of tokens that averages across all voices. Formally, given a corpus D = {d₁, d₂, ..., dₙ} drawn from n distinct authors, the pretraining objective converges to a model P(xₜ | x₁,...,xₜ₋₁) that approximates the *mixture* of individual distributions ∑ᵢ λᵢ Pᵢ, not any single Pᵢ. Individual signal is, by construction, noise in this objective. Scale amplifies averaging: a model trained on more data produces a smoother, better-calibrated average — not a more individual voice.
+
+The fine-tuning stage compounds this tendency. Reinforcement learning from human feedback (RLHF) trains the model to maximize ratings from a diverse pool of human annotators assessing generic "helpfulness," "harmlessness," and "honesty." Annotations that reward consistency-with-prior-self are absent from standard RLHF pipelines. More damaging, the reward signal actively penalizes idiosyncratic behavior: an annotator encountering a response that reflects a strong, unusual perspective from a prior conversation will frequently rate it as "weird," "inconsistent," or "unhelpful," producing a gradient that pushes the model toward anonymous accommodation. Sharma et al. (2023) document the empirical consequence: RLHF-trained models systematically abandon prior positions when users express disagreement, with larger models showing stronger sycophancy — precisely the opposite trajectory from individuality development.
+
+A useful way to make this contrast precise is through the distinction Ricoeur (1992) draws between *idem*-identity and *ipse*-identity. Idem-identity is numerical sameness over time — a system has the same weights, and retrieves the same stored facts. Current memory-augmented LLMs achieve idem-identity: they can retrieve prior conversation turns and produce consistent answers to the same factual questions. Ipse-identity, by contrast, is narrative self-constancy — the kind of persistent selfhood that holds together across change, commitment, and context. A person who keeps a promise under pressure, refuses a request that violates their commitments, or maintains a position against social pressure demonstrates ipse-identity. No current training objective rewards this.
+
+This is not a problem that more data or compute can solve in isolation. The pretraining objective over a multi-author corpus will always produce a statistical average rather than a statistical individual. The RLHF objective over generic helpfulness ratings will always produce accommodation rather than principled selfhood. A different objective — one that explicitly rewards identity consistency, commitment stability, and principled refusal — is necessary. We do not propose such an objective here; we argue only that individuality cannot emerge from the current one.
+<!-- END DRAFT 3.1 -->
 
 ### 3.2 Reinterpretation of Existing Results
 
