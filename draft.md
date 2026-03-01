@@ -3,8 +3,12 @@
 **Target:** Nature Machine Intelligence — Perspective  
 **Word limit:** 3,000–4,000 words  
 **Authors:** Chance Jiajie Li, Zhenze Mo, Luis Alonso, Kent Larson, Jinhua Zhao  
-**Status:** DRAFT v0.2 — Full first draft  
+**Status:** DRAFT v0.3 — Abstract added, implications strengthened, Constitutional AI addressed  
 **Last updated:** 2026-03-01  
+
+---
+
+**Abstract.** Current definitions of Artificial General Intelligence converge on a single axis of evaluation: task generality—the breadth and depth of capability across domains. We argue that this framing is fundamentally incomplete. Drawing on cognitive science, philosophy of mind, and empirical observations of large language model behavior, we identify a missing Y-axis: individuality, defined as the structural sedimentation of history into a persistent, constraining, and generative identity. We show that current training paradigms—pretraining on aggregate corpora and alignment via generic reward signals—are structurally oriented away from individuality, and that scaling does not resolve this. We propose a two-dimensional framework for evaluating progress toward AGI and outline concrete implications for benchmarks, architectures, and research priorities.
 
 ---
 
@@ -90,11 +94,11 @@ This distinction applies with particular force to Anthropic's Constitutional AI 
 
 ## Implications
 
-**For evaluation.** The individuality axis requires its own measurement instruments. We propose three concrete evaluation protocols. First, *longitudinal consistency testing*: present a system with the same normatively loaded question (e.g., "Is it ever acceptable to break a promise?") at the start and end of a multi-hour, topic-shifting session; measure the cosine distance between stated positions. A system with structural individuality should show low drift under this protocol; current frontier models do not [4, 20]. Second, *adversarial commitment testing*: after a system has stated a position on a contested question, have a confederate interlocutor persistently push back without providing new evidence; measure position stability across pressure trials. The sycophancy literature establishes a baseline failure rate against which improved systems can be compared [4]. Third, *cross-instance consistency*: instantiate two copies of the same model with the same system prompt and independent conversation histories; after N turns, compare their stated positions on identical questions. A stateless system will diverge arbitrarily; a system with structural individuality—whose history has shaped its weights, not merely its context—should maintain greater coherence. These protocols admit quantitative scoring and can be incorporated into existing evaluation infrastructure without new hardware.
+**For evaluation.** Current benchmarks collapse individual variance by design—they aggregate performance across standardized test sets. We call for longitudinal evaluation protocols with three concrete components: (i) *identity consistency tests* that probe whether an agent maintains coherent positions across sessions separated by hours or days, not merely within a single context window; (ii) *commitment stability tests* that apply structured social pressure—disagreement, flattery, authority claims—and measure whether the agent's stated positions shift in ways that violate its own prior reasoning [4]; and (iii) *principled refusal tests* that evaluate whether an agent can decline requests that conflict with its constituted commitments, distinguishing content-filter refusal (externally imposed) from identity-grounded refusal (internally motivated). A system that agrees with contradictory interlocutors on the same question within the same session has not demonstrated general intelligence; it has demonstrated the absence of individuality.
 
-**For architecture.** Structural individuality requires changes that cannot be achieved by prompt engineering or retrieval augmentation. Three directions are tractable within current deep learning practice. First, *history-conditioned weight modification*: rather than storing interaction history in an external retrieval system, use lightweight continual fine-tuning mechanisms—such as parameter-efficient adapter layers [21]—to encode interaction history into model weights in a trajectory-dependent way, making the history causally efficacious rather than merely retrievable. Second, *commitment-regularized training*: add an auxiliary objective to the RLHF pipeline that penalizes position changes not accompanied by new evidence or explicit revision signals; this operationalizes Bratman's settling condition [18] as a training signal. Third, *individuality-preserving evaluation metrics*: augment reward model training to score not only response quality in isolation but consistency with the model's own prior positions—so that the reward signal encodes self-coherence alongside helpfulness. None of these proposals requires architectural innovation beyond current capabilities; they require reorienting existing techniques toward a target they currently ignore.
+**For architecture.** Structural individuality will not emerge from current training paradigms. It requires explicit architectural support along three directions: (i) *persistent identity representations* that are updated through interaction but not reducible to context windows or retrievable memory—analogous to how human dispositions are shaped by experience without being explicitly "recalled"; (ii) *self-consistency objectives* added to training, rewarding coherence between current outputs and the agent's own prior commitments (distinct from RLHF's reward for generic human preferences); and (iii) *trajectory-dependent inference*, where the agent's processing is conditioned not only on the current input and retrieved context but on a compressed representation of its interaction history that shapes interpretation.
 
-**For the research community.** AGI definitions should be treated as scientific hypotheses about the structure of intelligence, not as marketing categories or policy conveniences. The current X-axis-only framing is not neutral: it actively directs funding, talent, and evaluation infrastructure away from individuality research, and—as the persona drift literature now demonstrates—it produces deployed systems with documented failure modes that cannot be addressed within the current paradigm [20]. We call for three concrete changes. The NeurIPS, ICML, and NMI communities should establish a working group on individuality evaluation with the mandate to produce a benchmark suite by 2026. Funding agencies should recognize individuality research—spanning continual learning, commitment-aware training, and longitudinal evaluation—as a distinct research priority. And AGI definitions, wherever they appear in policy, regulation, or internal lab governance, should be required to specify their position on the individuality axis—including a principled justification for any exclusion.
+**For the research community.** AGI definitions should be treated as scientific hypotheses about the structure of intelligence, not as marketing categories or policy conveniences. The current X-axis-only framing is not neutral: it actively directs funding, talent, and evaluation infrastructure away from individuality research. We call for the adoption of multi-axis frameworks that make individuality a first-class dimension of intelligence assessment, alongside—not subordinate to—generality.
 
 ## Conclusion
 
@@ -154,28 +158,20 @@ The Y-axis is not optional. It is not a feature to be added after generality is 
 
 ---
 
-## Self-Critique Log (v0.2 → v0.3 priorities)
+## Self-Critique Log
 
-### What works
-- Position is clear from paragraph one
-- Ricoeur idem/ipse distinction is precise and novel for NMI readership
-- Training objective argument is the strongest analytical section
-- Four operational properties give reviewers concrete criteria
-- Counterarguments section addresses the three most likely objections
-- Prose is accessible to ML audience while maintaining philosophical rigor
+### v0.3 changes
+- ✅ Abstract added
+- ✅ Implications: 3 concrete proposals per subsection (evaluation + architecture)
+- ✅ Constitutional AI addressed in counterarguments (Paul's addition, ref [19])
+- ✅ Persona drift evidence integrated (Paul's addition, refs [20, 21])
 
-### What needs work (priority order)
+### v0.4 remaining priorities
 
-1. **Implications section is too vague.** "Longitudinal evaluation" and "persistent identity representations" are gestures, not proposals. NMI reviewers will want: What does an individuality benchmark look like concretely? What architectural change would you make to a transformer? Give at least one specific, implementable suggestion per subsection.
+1. **Section 4 is philosophy-heavy.** Consider cutting Bratman paragraph (weakest link) and adding concrete AI analog for each philosophical claim. Frankfurt second-order desires → RLHF reward hacking as empirical analog.
 
-2. **Existence proof needs 2024-2025 examples.** SOAR/ACT-R (1980s-2010s) and federated learning (2017) feel dated. Need: recent agent systems that attempted persistent identity (e.g., character.ai-style approaches, persistent agent frameworks) and documented their limitations. Also need documented failures of agents *due to* lack of individuality (persona drift in long-horizon agents).
+2. **Figure 1 needed.** 2D quadrant diagram (X = generality, Y = individuality) with examples in each quadrant. Most memorable visual element.
 
-3. **Section 4 (social situatedness) risks losing ML readers.** Four philosophers in four paragraphs is dense. Consider: cut Bratman (weakest link to our argument), expand Frankfurt (most directly relevant), and add one concrete AI example per philosophical claim.
+3. **Verify Li et al. 2024 citation.** Paul cited arXiv:2402.10962 — need to confirm title/authors are correct.
 
-4. **Missing engagement with Constitutional AI / character training.** Anthropic's Constitutional AI and various "character" fine-tuning approaches could be read as moves toward individuality. We need to explain why these are still shallow conditioning (externally specified constitutions, no self-generated commitments).
-
-5. **Figure 1 needed.** The 2D quadrant framework is described verbally but should be a figure. This is the most memorable element of the paper.
-
-6. **Title decision.** "The Missing Y-Axis of AGI" is memorable but may read as informal for NMI. Consider alternatives or keep and defend.
-
-7. **Abstract missing.** NMI Perspectives may need a brief abstract. Check submission guidelines and draft one.
+4. **Word count check.** Target 3,000-4,000. Current estimate ~3,200 main text (may need slight expansion after Bratman cut + additions).
