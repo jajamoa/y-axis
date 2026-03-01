@@ -505,6 +505,22 @@ Could add to §2 (use-case spectrum): "In therapeutic AI, the clinical evidence 
 
 ---
 
+## Batch 29: Tuyls Deep Read + Governance
+
+### Tuyls et al. 2023 "A social path to human-like AI" — deeper analysis
+- Their core claim: "the bottleneck in AI progress is shifting from data assimilation to novel data generation" — social interaction generates novel data
+- They argue for "moving beyond a solipsistic view of agency"
+- **Our extension is precise:** Beyond solipsistic agency requires individuated agents. Social interaction between interchangeable clones (current LLMs) is impoverished because there's no *someone* to interact with. Novel data generation from social processes requires participants with distinct perspectives, commitments, and histories — i.e., Y-axis > 0.
+- This gives our paper a clear intellectual lineage within NMI: Tuyls → Kirk → Our paper
+
+### AI Governance and Accountability
+- OpenAI governance paper (Shavit & Agarwal): discusses "legal personhood for agents coupled with mandatory insurance"
+- Key connection: **accountability requires identity** — you can't hold a stateless service accountable. If an agent changes its behavior after each interaction, there's no stable entity to govern.
+- Leibo et al. (already noted) makes this argument most rigorously
+- Our framework provides the technical foundation for governance discussions: Y-axis properties map directly to governance requirements (persistence → auditability, constraint → predictability, historicity → accountability, social constitution → stakeholder relationships)
+
+---
+
 ## Batch 22: Strongest Counterarguments to Our Thesis
 
 ### Drexler's CAIS: "Comprehensive AI Services" (2019)
