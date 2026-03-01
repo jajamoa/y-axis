@@ -325,6 +325,53 @@ Our current CAI counterargument says "a constitution authored by external design
 
 ---
 
+## Batch 21: Generative Agent Simulations at Scale
+
+### Park et al. 2024 "Generative Agent Simulations of 1,000 People" (arXiv:2411.10109)
+- **Scale:** 1,052 real individuals simulated via LLM agents initialized from qualitative interviews
+- **Key finding:** Agents replicate individual attitudes 85% as accurately as real participants replicate their OWN answers 2 weeks later. Personality traits and experimental outcomes also replicated.
+- **Architecture:** LLM + qualitative interview transcripts as initialization data
+- **Relevance to our paper:**
+  - STRONGEST evidence that Y-axis is achievable when you invest in it
+  - BUT: individuality achieved through DATA INJECTION (interview transcripts), not through self-constitution
+  - In Ricoeur terms: high idem (accurate reproduction of the person's sameness) but unknown ipse (can the agent maintain commitments that weren't in the interview?)
+  - The agents are "digital twins" — clones of real people — not autonomous individuals
+  - **Our framework would classify this as:** high Y through idem, unknown Y through ipse. The distinction matters because idem-individuality is fragile (the agent doesn't know WHY it has these views, just THAT it does)
+- **Should be cited.** Fits in §2 (social simulation use case) alongside Park et al. 2023.
+- **Citation:** Park, J. S. et al. Generative agent simulations of 1,000 people. arXiv:2411.10109 (2024).
+
+### Moltbook: Agent Social Network (arXiv:2602.10127, Feb 2026)
+- LLM agents form identities through narrative construction on a social network
+- Explicitly cites Narrative Identity Theory
+- Very recent (Feb 2026) — shows the field is moving toward narrative identity
+- **Worth checking** but may be too recent/unvetted to cite
+
+---
+
+## Revised Master Citation List
+
+### Tier 1 — Must add to draft (5):
+1. **De Freitas et al. 2024** (Replika identity discontinuity) — empirical user evidence
+2. **Tosato et al. 2026 (PERSIST, AAAI)** — scaling doesn't produce stability
+3. **Park et al. 2023 (Generative Agents, UIST)** — most prominent high-Y attempt
+4. **Park et al. 2024 (1,000 People)** — strongest evidence for achievability of Y-axis
+5. **De Freitas & Cohen 2025 (NMI)** — positions in NMI editorial trajectory
+
+### Tier 2 — Strong additions (3):
+6. **Leibo et al. 2025 (DeepMind personhood)** — governance angle
+7. **Shteynberg et al. 2024 (NMI empathy)** — empathy requires identity
+8. **Soltoggio et al. 2024 (NMI)** — distributed agents need identity
+
+### Tier 3 — Optional (4):
+9. Spontaneous Emergence (Entropy 2024) — individuality emerges from social interaction
+10. PTCBENCH (Yu et al. 2026) — emerging Y-axis benchmarks
+11. Ilievski et al. 2025 (NMI) — even X-axis definition is contested
+12. Chen et al. 2024 (persona survey) — personalization landscape
+
+### Current refs: 24. Adding Tier 1 (5) → 29. Adding Tier 2 (3) → 32. Adding all → 36. NMI allows 100.
+
+---
+
 ## Batch 11: Memory ≠ Identity (architectural insight)
 
 ### Key insight from memory architecture survey landscape:
