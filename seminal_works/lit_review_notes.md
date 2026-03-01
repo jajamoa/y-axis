@@ -292,6 +292,39 @@ Our current CAI counterargument says "a constitution authored by external design
 
 ---
 
+## Batch 19: "What is Missing" for AGI — All X-Axis
+
+### Mark Riedl "Toward AGI — What is Missing?" (Aug 2023, Medium)
+- His answer: planning, world models, reinforcement learning with exploration
+- **Zero mention of identity, individuality, or social cognition**
+- Confirms our claim: even thoughtful critiques of AGI's gaps focus entirely on X-axis capabilities
+- Not citable (blog post) but useful as evidence that the blind spot is widespread
+
+### MAGELLAN (arXiv:2502.07709) — Autotelic LLM Agents
+- Agents that set their own goals based on intrinsic motivation
+- "Autotelic" = self-goal-setting, related to our Y-axis (self-generated commitments)
+- BUT: their intrinsic motivation is for *task learning*, not *identity formation*
+- Shows the X-axis research is *approaching* Y-axis territory without recognizing it
+
+### OMNI framework (cited in agentic AI survey, Jan 2026)
+- Argues "for agents to be truly autonomous, they must possess an intrinsic motivation function to generate their own curriculum"
+- Again: intrinsic motivation framed as capability (X), not identity (Y)
+
+---
+
+## Batch 20: Sophia as Closest Related Work
+
+### Sophia: System 3 Meta-Layer (arXiv:2512.18202, already our ref [22])
+- Explicitly proposes "maintaining identity" as function of a meta-cognitive layer
+- System 1 (perception) + System 2 (deliberation) + System 3 (identity/verification/alignment)
+- **This is the closest existing work to our Y-axis proposal** — we should position carefully:
+  - Sophia proposes a SPECIFIC architecture for one Y-axis property (persistence + constraint)
+  - Our paper proposes the FRAMEWORK (two axes, four properties, application spectrum)
+  - We're complementary: Sophia is an implementation attempt; we define what it's implementing
+  - Our draft currently cites Sophia as [22] for "System 3 meta-layers dedicated to narrative identity" — correct positioning
+
+---
+
 ## Batch 11: Memory ≠ Identity (architectural insight)
 
 ### Key insight from memory architecture survey landscape:
