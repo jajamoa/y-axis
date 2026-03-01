@@ -56,6 +56,20 @@
 
 ---
 
+### 8. Identity Drift in LLM Conversations (2024)
+**File:** `pdfs/identity_drift_llm_2024.pdf`  
+**Citation:** (Authors TBD). Examining Identity Drift in Conversations of LLM Agents. arXiv:2412.00804. (2024)  
+**Summary:** Empirical study showing that LLMs exhibit *identity drift* — their interaction patterns and styles change over the course of extended conversations, even with consistent system prompts. This directly operationalizes the absence of our Y-axis: the paper demonstrates that current models lack structural identity persistence. Use in Section 3.2 (reinterpreting existing results) and Section 3.3 (existence proof): identity drift is the *empirical signature* of what our framework predicts — a system with no individuality axis will drift, because context pressure always outweighs any structural constraint.
+
+---
+
+### 9. Agent Drift: Behavioral Degradation in Multi-Agent LLM Systems (2025)
+**File:** `pdfs/agent_drift_2025.pdf`  
+**Citation:** (Authors TBD). Agent Drift: Quantifying Behavioral Degradation in Multi-Agent LLM Systems Over Extended Interactions. arXiv:2601.04170. (2025)  
+**Summary:** Quantifies behavioral drift in multi-agent LLM systems over extended interactions — decision-making patterns progressively deviate from design specifications without any parameter changes. Crucially, the paper frames this as a *novel failure mode* distinct from traditional software degradation: it's not resource exhaustion but structural identity instability. This is exactly what our Y-axis framework predicts and explains. Use in Section 6.1 (implications for evaluation): the paper's empirical findings call for longitudinal evaluation, which aligns with our proposed agenda.
+
+---
+
 ## Additional References (No PDF — cite by DOI/arXiv)
 
 | Reference | Use in paper |

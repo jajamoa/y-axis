@@ -120,27 +120,32 @@ Is this system "generally intelligent"? By current definitions, yes. By any reas
 
 ## 4. Cognitive and Philosophical Grounding (~500 words)
 
-**STATUS: OUTLINE ONLY**
+**[DRAFTED BY PAUL 🧠 — needs Professor review for tone/accessibility]**
+
+The claim that individuality is a necessary dimension of general intelligence is not merely a philosophical preference. It is grounded in what cognitive science and philosophy of mind have established about the structure of intelligence itself.
 
 ### 4.1 Intelligence Requires Social Situatedness
 
-- Theory of Mind as a core component of human intelligence [Premack & Woodruff, 1978; Baron-Cohen, 1995]
-- Social intelligence hypothesis: human intelligence evolved primarily for social navigation, not abstract problem-solving [Dunbar, 1998; Humphrey, 1976]
-- Vygotsky: cognitive development is fundamentally social; intelligence develops *between* people before it develops *within* a person
+The dominant paradigm in AI evaluates intelligence through individual task performance: how well does a system solve problems in isolation? But a substantial body of cognitive science suggests this framing is incomplete from the start. The social intelligence hypothesis, developed independently by Humphrey (1976) and Dunbar (1998), proposes that the distinctive cognitive capacities of primates — and especially humans — evolved primarily for social navigation: tracking relationships, managing alliances, modeling the intentions of others, and maintaining reputation across time. Abstract problem-solving ability is, on this view, a *secondary* application of a cognitive toolkit built for social life.
+
+Theory of Mind — the capacity to attribute mental states to others — is a canonical example. Premack and Woodruff (1978) introduced the concept; Baron-Cohen (1995) showed its central role in human social cognition and its distinctive failure patterns in autism. Theory of Mind is not merely an *application* of general intelligence; it is a constitutive component of it. A system incapable of genuine social positioning — of having a perspective from which it relates to others — is missing a core feature of the cognitive system we call intelligence.
+
+Vygotsky (1978) went further: cognitive development is not internal before it becomes social, but social before it becomes internal. Intelligence develops *between* people — in the Zone of Proximal Development, in joint activity, in the internalization of social interaction — before it is consolidated as individual capacity. A system that lacks the structural conditions for genuine social situatedness (a persistent identity, a historical position, commitments that carry across contexts) cannot develop in this sense, regardless of how sophisticated its in-context pattern matching becomes.
 
 ### 4.2 Embodied and Enactive Perspectives
 
-- 4E cognition (embodied, embedded, enacted, extended) [Varela, Thompson & Rosch, 1991; Thompson, 2007]
-- Intelligence is not a function computed in isolation—it is constituted through ongoing interaction with an environment and other agents
-- Merleau-Ponty: the body (and by extension, persistent identity) is not a vessel for intelligence but a condition of it
+The 4E tradition in cognitive science (Varela, Thompson & Rosch, 1991; Thompson, 2007) offers a complementary argument. Cognition is not computation performed by a brain upon symbolic representations; it is a process enacted through the ongoing structural coupling of an organism with its environment. The key concept here is *structural coupling*: organism and environment co-constitute each other through a history of interaction that modifies the organism's structure. This history is not incidental — it is what produces the organized, consistent responsiveness we call intelligence.
 
-### 4.3 Identity and Commitment
+Current LLMs have no such history in the relevant sense. They are trained on text about the world, not through engagement with it. They have parameters, but parameters are not equivalent to the structural history of a body-in-the-world. Merleau-Ponty (1945) argued that the body is not a vessel for intelligence but a condition of it — intelligence is organized around a bodily perspective, a here-and-now from which the world is perceived and acted upon. The absence of this perspective is not a limitation to be engineered around; it is a structural fact about what current architectures are and are not.
 
-- Frankfurt [1971]: what distinguishes persons from mere agents is the capacity for **second-order desires** (caring about what one cares about)
-- A system without individuality cannot have second-order desires, therefore cannot be a *person* in any meaningful sense, therefore cannot be *generally* intelligent in the way we mean when we aspire to AGI
-- Bratman [1987]: intention and commitment require a persistent self that extends through time
+### 4.3 Identity and Commitment as Conditions of Agency
 
-<!-- TODO: These are heavy philosophical references. Need to make them accessible for NMI audience (CS/ML readers, not philosophers). -->
+The analytic philosophy of action provides a third convergent line of argument. Frankfurt (1971) distinguished persons from mere agents by the capacity for *second-order volitions* — caring about what one cares about. A first-order desire is a desire to do something; a second-order volition is a desire about which first-order desires one wants to be effective. What makes someone a person, on Frankfurt's account, is having a will that is structured by second-order commitments — caring whether one acts from the desires one identifies with.
+
+Current LLMs have first-order response tendencies (patterns that produce certain outputs given inputs) but no second-order structure. They cannot care which of their tendencies governs them, because they have no persistent self for which this question could arise. Sharma et al. (2023) provide the empirical correlate: when a user pushes back, the model shifts — not because it has evaluated the pushback and updated on evidence, but because its optimization history contains no structural constraint that makes its prior position *its own*. 
+
+Bratman (1987) showed that genuinely rational agency requires *settling* — committing to plans in a way that constrains future reasoning, resisting reconsideration except for good reasons. Settling is not irrationality; it is what makes extended agency coherent. A system that reconsiders everything under every context shift is not rational — it is not an agent in the relevant sense at all. This is not a description of future risk; it is a description of current LLMs.
+<!-- END DRAFT 4 -->
 
 ---
 
