@@ -168,18 +168,32 @@ The Y-axis is not optional. It is not a feature to be added after generality is 
 
 ## Self-Critique Log
 
-### v0.3 changes
-- ✅ Abstract added
-- ✅ Implications: 3 concrete proposals per subsection (evaluation + architecture)
-- ✅ Constitutional AI addressed in counterarguments (Paul's addition, ref [19])
-- ✅ Persona drift evidence integrated (Paul's addition, refs [20, 21])
+### v0.4 completed
+- ✅ Abstract (~113 words)
+- ✅ Full manuscript ~3,200 words main text (within NMI 3,000-4,000)
+- ✅ Constitutional AI counterargument with Ricoeur idem/ipse framing
+- ✅ Persona drift evidence [20, 21]
+- ✅ Section 4 revised: Frankfurt AI analog (wantons + RLHF), Bratman merged and shortened
+- ✅ Framework section expanded with benchmark gap observation
+- ✅ Concrete evaluation protocols (3) and architecture proposals (3)
 
-### v0.4 remaining priorities
+### Simulated Reviewer Critique (NMI Perspective standards)
 
-1. **Section 4 is philosophy-heavy.** Consider cutting Bratman paragraph (weakest link) and adding concrete AI analog for each philosophical claim. Frankfurt second-order desires → RLHF reward hacking as empirical analog.
+**Reviewer 1 (ML systems):** "The definition of individuality via Ricoeur is intellectually interesting but not *operationally testable*. The four properties (persistence, constraint, historicity, social constitution) are stated but never quantified. How do I measure 'historicity'? Without a metric, this remains philosophy, not science. The evaluation section proposes protocols but doesn't validate them. Grade: conceptually strong, operationally underspecified."
 
-2. **Figure 1 needed.** 2D quadrant diagram (X = generality, Y = individuality) with examples in each quadrant. Most memorable visual element.
+→ **Action needed:** Add one concrete measurable metric for at least one property. E.g., for persistence: "measure position cosine similarity across N session resets" — already partially there but needs to be tied back explicitly to the four properties.
 
-3. **Verify Li et al. 2024 citation.** Paul cited arXiv:2402.10962 — need to confirm title/authors are correct.
+**Reviewer 2 (cognitive science):** "The engagement with 4E cognition and social intelligence hypothesis is correct but superficial. Varela/Thompson's enactivism has a much richer account of structural coupling that directly addresses how an agent's history constitutes its cognition — this is closer to the paper's 'sedimentation' concept than the brief mention suggests. Also: Vygotsky is conspicuously absent given the social constitution claim."
 
-4. **Word count check.** Target 3,000-4,000. Current estimate ~3,200 main text (may need slight expansion after Bratman cut + additions).
+→ **Action needed:** Add one sentence connecting structural coupling to sedimentation. Consider adding Vygotsky citation for social constitution property.
+
+**Reviewer 3 (AI safety/alignment):** "The argument that Constitutional AI doesn't produce individuality is compelling but risks being read as dismissive of alignment research. The paper should acknowledge that alignment and individuality are complementary, not competing — a system needs both. Also, the claim that identity consistency is 'safety-relevant' needs more support than one sycophancy citation."
+
+→ **Action needed:** Add a sentence in implications acknowledging complementarity. Consider adding a second safety-relevant example beyond sycophancy.
+
+### v0.5 priorities (ranked)
+1. Tie evaluation protocols explicitly to the four operational properties
+2. Add Vygotsky citation for social constitution
+3. Acknowledge alignment-individuality complementarity in implications
+4. Figure 1 (quadrant diagram) — visual needed before submission
+5. Final citation verification pass (all 21 refs)
