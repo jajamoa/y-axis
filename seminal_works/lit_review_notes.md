@@ -372,6 +372,45 @@ Our current CAI counterargument says "a constitution authored by external design
 
 ---
 
+## Batch 22: Strongest Counterarguments to Our Thesis
+
+### Drexler's CAIS: "Comprehensive AI Services" (2019)
+- **Argument:** AGI should be realized as stateless services, not persistent agents. "Agents are a class of service-providing products, rather than a natural or necessary engine of progress."
+- **Why this matters:** CAIS is the strongest intellectual case for Y=0 by design. Not an oversight — a deliberate choice motivated by safety (stateless services can't pursue rogue goals).
+- **Our response should be:**
+  1. CAIS is a valid point in the design space (lower half of our quadrant)
+  2. But many applications REQUIRE the Y-axis (companions, tutors, social simulations)
+  3. The question is not "should AI have identity?" but "which applications need how much identity?"
+  4. Our framework makes this choice EXPLICIT rather than leaving it implicit in architecture decisions
+- **Should we cite?** Possibly — adds intellectual depth and shows we've engaged with the strongest counterargument. But it's a technical report, not peer-reviewed. Could mention in text without formal citation, or cite as: Drexler, K. E. Reframing superintelligence: comprehensive AI services as general intelligence. FHI Technical Report (2019).
+
+### "AGI doesn't need consciousness" objection
+- Common counterargument: individuality = consciousness = unnecessary for intelligence
+- **Our defense:** We're NOT arguing AGI needs consciousness. We're arguing:
+  1. Individuality ≠ consciousness (our four properties are operationally measurable)
+  2. Specific applications require the Y-axis regardless of whether it implies consciousness
+  3. The design space should be made explicit so researchers can choose their position deliberately
+- **Draft should include a sentence like:** "We do not claim that individuality implies consciousness. Our four properties are operationally testable without resolving any question about machine sentience."
+
+---
+
+## Key Insights for Draft Revision (from all 22 batches)
+
+### Sentences to add:
+1. "Unlike consciousness, individuality is operationally measurable" — addresses the strongest objection
+2. "Anthropic's character-training represents the most sophisticated current Y-axis attempt, yet by design produces rule-following rather than self-constancy" — industry case study
+3. "Park et al.'s 1,000-person simulation demonstrates that Y-axis properties are achievable when explicitly invested in" — strongest positive evidence
+4. "Even thoughtful critiques of what AGI lacks (Riedl, Drexler) focus entirely on X-axis capabilities" — confirms the blind spot is systematic
+5. "The Replika case is a natural experiment in Y-axis failure: when identity continuity broke, users mourned" — empirical stakes
+
+### References to integrate:
+- De Freitas et al. 2024 (Replika) — in §1 or §2
+- Tosato et al. 2026 (PERSIST) — in §3
+- Park et al. 2023 + 2024 — in §2 (social simulation)
+- De Freitas & Cohen 2025 (NMI) — in §5 (implications)
+
+---
+
 ## Batch 11: Memory ≠ Identity (architectural insight)
 
 ### Key insight from memory architecture survey landscape:
