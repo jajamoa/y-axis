@@ -3,7 +3,7 @@
 **Target:** Nature Machine Intelligence — Perspective  
 **Word limit:** 3,000–4,000 words  
 **Authors:** Chance Jiajie Li, Zhenze Mo, Luis Alonso, Kent Larson, Jinhua Zhao  
-**Status:** DRAFT v0.3 — Abstract added, implications strengthened, Constitutional AI addressed  
+**Status:** DRAFT v0.4 — Section 4 revised (AI analogs added), framework section expanded  
 **Last updated:** 2026-03-01  
 
 ---
@@ -52,6 +52,8 @@ Critically, these axes are substantially orthogonal. Consider the space they def
 - **High generality, high individuality:** The implicit aspiration of AGI as commonly understood—a system that can do anything *and* that has a consistent self from which it acts. No current system occupies this quadrant.
 - **Low generality, low individuality:** A stateless, narrow tool. A calculator.
 
+This framework (Figure 1) makes visible what current definitions obscure: the entire Y-axis is unmeasured. Every major AGI benchmark—ARC-AGI, MMLU, BIG-bench, AGIEval—evaluates movement along X while treating Y as irrelevant. The field has built an elaborate measurement infrastructure for one axis and none for the other.
+
 The orthogonality claim is not merely conceptual. It is supported by an architectural argument about current training methods.
 
 ## Why generality does not entail individuality
@@ -80,9 +82,7 @@ The social intelligence hypothesis, developed by Humphrey and Dunbar [12, 13], h
 
 The 4E cognition framework—embodied, embedded, enacted, and extended—reinforces this point [15, 16]. Intelligence, on this view, is not a function computed in isolation by an abstract reasoner. It is constituted through ongoing interaction between an agent, its environment, and other agents. A system without persistent identity cannot be embedded in a social world in the way that intelligence requires, because social embedding presupposes a *someone* to be embedded.
 
-Frankfurt's analysis of personhood [17] adds a further dimension. What distinguishes persons from mere agents, Frankfurt argues, is the capacity for second-order desires: not just wanting things, but caring about what one wants—evaluating one's own motivations and acting from reflective commitment. A system without individuality cannot form second-order desires because there is no self to do the reflecting. It can optimize any objective handed to it, but it cannot evaluate whether the objective is worth pursuing. This capacity is not a luxury feature of intelligence; it is what makes agency meaningful rather than mechanical.
-
-Bratman's work on intention and planning [18] makes a related point: rational agency requires a persistent self that extends through time, capable of forming intentions that constrain future action. Plans are not moment-by-moment optimizations; they are commitments made by a temporally extended self. An agent without individuality cannot plan in this sense—it can only react.
+Frankfurt's analysis of personhood [17] sharpens the point. What distinguishes persons from mere agents, Frankfurt argues, is the capacity for second-order desires: not just wanting things, but caring about what one wants—evaluating one's own motivations and acting from reflective commitment. A system without individuality cannot form second-order desires because there is no self to do the reflecting. It can optimize any objective handed to it, but it cannot evaluate whether the objective is worth pursuing. The AI analog is immediate: RLHF-trained models optimize for human approval as a first-order objective but cannot ask whether approval-seeking is itself a good objective. They are, in Frankfurt's terms, *wantons*—systems driven by whatever desire is strongest in context, without the reflective structure to evaluate their own motivations. Bratman's related account of rational planning [18]—which requires a persistent self capable of forming intentions that constrain future action—explains why current agents fail at long-horizon tasks not merely due to context limitations, but because they lack the temporal self-continuity that planning presupposes. A plan is a commitment made by a self that extends through time; an agent without individuality can only react to each moment as it arrives.
 
 ## Counterarguments
 
