@@ -482,6 +482,29 @@ Our current CAI counterargument says "a constitution authored by external design
 
 ---
 
+## Batch 28: Therapeutic Alliance = Clinical Proof of Y-Axis Need
+
+### "Digital therapeutic alliance" with mental health chatbots
+- **JMIR Mental Health (Oct 2025):** Users form "Bond," "Light Bond," or "No Bond" with chatbots. Those who bond report better outcomes. Bonding requires consistency.
+- **NEJM AI (2025):** First randomized trial of generative AI chatbot for mental health. Secondary outcome: therapeutic alliance measurement.
+- **TherapyProbe (arXiv:2602.22775, Feb 2026):** "Users of mental health chatbots report forming 'digital therapeutic alliances', making relational dynamics central to their wellbeing."
+
+### Key insight:
+**Therapeutic alliance is the single strongest predictor of therapy outcomes in clinical psychology.** And it requires:
+1. Consistency of the therapist's character across sessions (= PERSISTENCE)
+2. Predictable value commitments (= CONSTRAINT)
+3. Building on shared history (= HISTORICITY)
+4. A real relationship, not just technique (= SOCIAL CONSTITUTION)
+
+**These are our four Y-axis properties.** Mental health AI cannot function without Y > 0. This is not a philosophical argument — it's a clinical one.
+
+### For our draft:
+Could add to §2 (use-case spectrum): "In therapeutic AI, the clinical evidence is clear: therapeutic alliance — the strongest predictor of treatment outcomes — requires exactly the properties our Y-axis captures: consistent identity, predictable values, shared history, and genuine relational engagement."
+
+### Potential citation: Xu et al. 2025 (digital therapeutic alliance) — need to find the original paper
+
+---
+
 ## Batch 22: Strongest Counterarguments to Our Thesis
 
 ### Drexler's CAIS: "Comprehensive AI Services" (2019)
