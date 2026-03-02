@@ -3,8 +3,8 @@
 **Target:** Nature Machine Intelligence — Perspective  
 **Word limit:** 3,000–4,000 words  
 **Authors:** Chance Jiajie Li, Zhenze Mo, Luis Alonso, Kent Larson, Jinhua Zhao  
-**Status:** DRAFT v1.0-rc3 — Section 4 reframed (independent capacities, not constitutive claim), independent/tension contradiction resolved, [21] removed, Frankfurt cut, Vygotsky relocated to Section 4  
-**Last updated:** 2026-03-01  
+**Status:** DRAFT v1.0-rc5 — Zhenze historical narrative integrated, Assistant Axis distinguished, VAT added, Hendrycks/Legg-Hutter/InstructGPT cited  
+**Last updated:** 2026-03-02  
 
 ---
 
@@ -14,7 +14,7 @@
 
 Consider two AI systems. The first can write code, diagnose diseases, summarize legal documents, and pass graduate-level exams in dozens of fields. Ask it the same value-laden question twice in a row after a context reset, and it may give contradictory answers. It has no persistent identity, no commitments it will not abandon under pressure, no history that shapes how it interprets the world. The second system can do only one thing well, but it has a consistent perspective, remembers what it has said, and will decline requests that conflict with its established commitments. Current definitions of AGI would rate the first system as closer to general intelligence. We think this gets something important wrong.
 
-The major frameworks agree on what intelligence means: task generality. DeepMind's "Levels of AGI" measures depth and breadth of performance [1]. OpenAI's charter targets "highly autonomous systems that outperform humans at most economically valuable work." Chollet's ARC benchmark measures skill-acquisition efficiency [2]. These definitions differ in specifics but share an assumption: that intelligence is about what a system can do, and that properties like persistent identity, social situatedness, and historical trajectory will either emerge on their own or don't matter.
+The major frameworks agree on what intelligence means: task generality. DeepMind's "Levels of AGI" measures depth and breadth of performance [1]. OpenAI's charter targets "highly autonomous systems that outperform humans at most economically valuable work." Chollet's ARC benchmark measures skill-acquisition efficiency [2]. The most recent AGI framework maps ten cognitive domains grounded in psychometric theory [25], yet all ten measure task capability; none measures the persistence or coherence of the entity being tested. These definitions differ in specifics but share an assumption that traces back through formal definitions of machine intelligence [26] to Turing's original behavioral test: intelligence is about what a system can do. Scaling laws [27] and alignment training [28] both optimize along this same axis—one by adding capability, the other by constraining output. The result is a research paradigm with precise metrics for what a system can do, and no vocabulary for who is doing it. There is no speaker behind the speech.
 
 We argue that building intelligent agents involves two design orientations that are in genuine tension. One is generalist capability: making agents that can do more things, better. The other is individuated identity: making agents that are someone in particular, with a consistent perspective, durable commitments, and a history that constrains how they act. These are not the same objective. They pull in different directions. Optimizing for universal capability actively suppresses the idiosyncrasy that individuality requires, and optimizing for identity fidelity introduces constraints that limit general performance.
 
@@ -70,7 +70,7 @@ The dominant paradigm for building capable AI systems—large-scale pretraining 
 
 **The training objective averages out individual signal.** Pretraining minimizes cross-entropy loss over a corpus representing millions of authors. The objective function treats individual voice, perspective, and commitment as variance to be reduced. A model that perfectly minimizes this loss has learned the statistical mean of human expression—a remarkably useful achievement, but one that is definitionally anti-individual. Individuality is signal that this objective treats as noise.
 
-**Alignment training penalizes idiosyncrasy.** RLHF reward models are trained on human preferences for responses that are helpful, harmless, and honest in general, not for any particular evaluator. The result is convergence toward a consensus persona: agreeable, qualified, eager to help. This is not individuality. It is the statistical ghost of every preference annotator, averaged into a single compliant voice. Alignment training offers a partial analogy: RLHF for helpfulness and harmlessness actively degrades general capability benchmarks, a phenomenon documented as the "alignment tax" [22]. This suggests that any training objective oriented toward the Y-axis would face similar tradeoffs through analogous mechanisms. Constraining what a model says, for whatever reason, comes at a cost to what it can do. Systems trained this way exhibit well-documented sycophancy, abandoning stated positions to agree with users [4], which is the expected behavior of a system optimized to lack structural commitments.
+**Alignment training penalizes idiosyncrasy.** RLHF reward models are trained on human preferences for responses that are helpful, harmless, and honest in general, not for any particular evaluator. The result is convergence toward a consensus persona: agreeable, qualified, eager to help. This is not individuality. It is the statistical ghost of every preference annotator, averaged into a single compliant voice. Alignment training offers a partial analogy: RLHF for helpfulness and harmlessness actively degrades general capability benchmarks, a phenomenon documented as the "alignment tax" [22]. More recently, Chen et al. [30] show that alignment interventions propagate unintended changes across interconnected values—optimizing for one value systematically distorts others, an effect invisible to target-only evaluation. This suggests that any training objective oriented toward the Y-axis would face similar tradeoffs through analogous mechanisms. Constraining what a model says, for whatever reason, comes at a cost to what it can do. Systems trained this way exhibit well-documented sycophancy, abandoning stated positions to agree with users [4], which is the expected behavior of a system optimized to lack structural commitments.
 
 **Scaling does not resolve this.** The trajectory from GPT-3 to GPT-4 to current frontier models represents orders-of-magnitude increases in generality with no corresponding increase in structural individuality. Models remain stateless across sessions, adopt and discard personas on request, and exhibit value instability under prompt perturbation [8]. If individuality were an emergent property of capability, we should have seen evidence of it by now. We have not—and the training objective argument explains why we should not expect to.
 
@@ -80,7 +80,7 @@ The separability of individuality and generality is further demonstrated by syst
 
 Recent empirical work provides direct negative evidence. Li et al. (2024) demonstrate that prompt-based persona conditioning degrades systematically over extended conversations: transformer attention over system-prompt tokens weakens as dialogue accumulates, causing measurable drift in stylistic and behavioral consistency [19]. This is not an engineering limitation awaiting a patch—it is a structural consequence of how attention-based architectures process sequential context, and it affects frontier models including GPT-4. In multi-agent settings, behavioral drift compounds: systems that begin with well-specified roles progressively deviate from their design specifications over extended interaction sequences, without any parameter change and without explicit adversarial pressure. These are not anecdotal observations; they are documented failure modes that admit no solution within the current paradigm, because they arise from the absence of structural individuality—not from any correctable implementation error.
 
-Notably, recent architecture proposals have begun to recognize this gap independently—confirming that the absence of individuality is becoming visible to the field even without a unified framework to name it. Proposals for "System 3" meta-layers dedicated to narrative identity [21] converge on the same conclusion: individuality is not a property that current architectures are gradually acquiring. It is a recognized absence that requires dedicated architectural treatment.
+Notably, recent work has begun to recognize this gap independently. Lu et al. [29] identify an "Assistant Axis" in model activation space—the leading component of the persona space, capturing the degree to which a model operates in its default helpful-assistant mode. Steering away from this axis induces persona drift and bizarre behavior; steering toward it reinforces compliance. This empirical finding confirms that persona is a real, measurable dimension of model behavior, but the axis they identify is orthogonal to ours: it measures *which* persona a model currently performs, not whether the model has a persistent identity that constrains performance across contexts. The Assistant Axis is a direction within the space of possible performances; the Y-axis concerns whether there is a someone performing. Proposals for "System 3" meta-layers dedicated to narrative identity [21] converge on a complementary conclusion: individuality is not a property that current architectures are gradually acquiring. It is a recognized absence that requires dedicated architectural treatment.
 
 ## Cognitive science treats these as independent capacities
 
@@ -174,5 +174,17 @@ The Y-axis is not optional. It is not a feature to be added after generality is 
 [23] Kirk, H. R., Vidgen, B., Röttger, P. & Hale, S. A. The benefits, risks and bounds of personalizing the alignment of large language models to individuals. *Nat. Mach. Intell.* (2024).
 
 [24] Tuyls, K. et al. A social path to human-like artificial intelligence. *Nat. Mach. Intell.* **5**, 1181–1188 (2023).
+
+[25] Hendrycks, D., Song, D., Szegedy, C. et al. A Definition of AGI. arXiv:2510.18212 (2025).
+
+[26] Legg, S. & Hutter, M. Universal intelligence: a definition of machine intelligence. *Minds and Machines* **17**, 391–444 (2007). arXiv:0712.3329.
+
+[27] Kaplan, J. et al. Scaling laws for neural language models. arXiv:2001.08361 (2020).
+
+[28] Ouyang, L. et al. Training language models to follow instructions with human feedback. *Advances in Neural Information Processing Systems* **35** (2022). arXiv:2203.02155.
+
+[29] Lu, C. et al. The Assistant Axis: situating and stabilizing the default persona of language models. arXiv:2601.10387 (2026).
+
+[30] Chen, J. et al. Value Alignment Tax: measuring value trade-offs in LLM alignment. arXiv:2602.12134 (2026).
 
 
